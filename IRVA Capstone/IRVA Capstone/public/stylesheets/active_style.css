@@ -10,7 +10,7 @@ h1 {
 }
 
 .outerChatBorder {
-    display: flex;
+    display: flexbox;
     border: 2px solid rgb(184, 184, 184);
     width: 80%;
     height: 500px;
