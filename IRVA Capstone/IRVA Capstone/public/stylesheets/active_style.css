@@ -10,9 +10,10 @@ h1 {
 }
 
 .outerChatBorder {
+    display: flex;
     border: 2px solid rgb(184, 184, 184);
     width: 80%;
-    height: 800px;
+    height: 500px;
     background-color: white;
 }
 
@@ -24,7 +25,13 @@ h1 {
 }
 
 #innerChat{
-    
+    display: flex;
+    align-items: center;
+    align-self: center;
+    border: 2px solid rgb(2, 2, 2);
+    width: 75%;
+    height: 350px;
+    background-color: rgb(219, 85, 85);
 }
 
 .speech-bubble {
