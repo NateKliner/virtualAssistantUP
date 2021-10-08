@@ -1,60 +1,65 @@
 body {
-    float: right;
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
+  float: right;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 .outerChatBorder {
-    display: flexbox;
-    border: 2px solid rgb(184, 184, 184);
-    width: 80%;
-    height: 500px;
-    background-color: white;
+  display: flexbox;
+  border: 2px solid rgb(184, 184, 184);
+  width: 80%;
+  height: 500px;
+  background-color: white;
+}
+
+#header {
+  margin-right: 50%;
 }
 
 #topBar {
-    
-    color: black;
-    background-color: purple;
-    border-radius: 5px;
+  color: black;
+  display: flex;
+  background-color: purple;
+  border-radius: 5px;
+  width: auto;
 }
 
 #innerChat{
-    display: flex;
-    align-items: center;
-    align-self: center;
-    border: 2px solid rgb(2, 2, 2);
-    width: 75%;
-    height: 350px;
-    background-color: rgb(219, 85, 85);
+  display: flex;
+  align-items: center;
+  align-self: center;
+  border: 2px solid rgb(2, 2, 2);
+  width: 75%;
+  height: 350px;
+  background-color: rgb(219, 85, 85);
 }
 
 .speech-bubble {
-  filter: drop-shadow(-1px -1px 2px rgba(black, .10)) drop-shadow(1px 2px 2px rgba(black, .15));
-  margin: 1rem;
-  margin-bottom: (20px * 2);
-  padding: 1.5rem 2rem;
-  position: relative;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 400;
-  background: #8CA8D8;
-  color: white;
+filter: drop-shadow(-1px -1px 2px rgba(black, .10)) drop-shadow(1px 2px 2px rgba(black, .15));
+margin: 1rem;
+margin-bottom: (20px * 2);
+padding: 1.5rem 2rem;
+position: relative;
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 1.2rem;
+font-weight: 400;
+background: #8CA8D8;
+color: white;
 }
 
 
 .speech-bubble cite {
-  position: absolute;
-  bottom: -2rem;
-  left: 4.5rem;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 300;
-  letter-spacing: 0.5px;
-  color: white;
+position: absolute;
+bottom: -2rem;
+left: 4.5rem;
+font-size: 1rem;
+font-style: normal;
+font-weight: 300;
+letter-spacing: 0.5px;
+color: white;
 }
