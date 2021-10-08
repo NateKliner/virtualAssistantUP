@@ -4,29 +4,49 @@
 <title>IRVA: ChatBot</title>
 </head>
 <link rel="stylesheet" href="activeStyle.css">
+<script>
+    function myFunction(){
+   // similar behavior as an HTTP redirect
+   window.location.replace("idle_GUI.html");
+   //or
+   // similar behavior as clicking on a link
+   window.location.href =("idle_GUI.html");
+}; 
+</script>
+
 <body>
 
 <!--the outer casing of our chatbot-->
 <div class="outerChatBorder">
     <div id="topBar">
-        <div id="image" style="float: left"> 
-            <img src="up-logo.png" alt="logo" width=50 height=50 >
+        <div id="image"> 
+            <img src='up-logo.png' alt='logo'>
         </div>
-        <div id="header" style="float: center" >
+        <div id="header">
             <h1> IRVA </h1>
         </div>
     </div>
+    <p>
+        <span id="dateTime">
+        </span>
+    </p>
     <div id="innerChat">
         <blockquote class="speechBubble">
-            <p> dummy message, testing for bot message</p>
+            <p> Hello, how can I help you today?</p>
         </blockquote>
     </div>
-    <div>
+    <div id="bottomTextBox">
         <input type="text" id="input" name="input"><br><br>
     </div>
 </div>
 <div class="closeButton">
-    <button type="button">CLOSE</button>
+        <button onclick="myFunction()" type="button">CLOSE</button>
 </div>
+
+<script>
+    var dt = new Date();
+    document.getElementById('dateTime').innerHTML = dt.toLocaleTimeString();
+</script>
+
 </body>
 </html>
