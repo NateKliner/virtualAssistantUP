@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IRVA: ChatBot</title>
+</head>
+<link rel="stylesheet" href="IRVA Capstone/IRVA Capstone/public/stylesheets/active_style.css">
+<script>
+    function myFunction(){
+   // similar behavior as an HTTP redirect
+   window.location.replace("idle_GUI.html");
+   //or
+   // similar behavior as clicking on a link
+   window.location.href =("idle_GUI.html");
+}; 
+</script>
+
+<body>
+
+<!--the outer casing of our chatbot-->
+<div class="outerChatBorder">
+    <div id="topBar">
+        <div id="image"> 
+            <img src='up-logo.png' alt='logo'>
+        </div>
+        <div id="header">
+            <h1> IRVA </h1>
+        </div>
+    </div>
+    <p>
+        <span id="dateTime">
+        </span>
+    </p>
+    <div id="innerChat">
+        <blockquote class="speechBubble">
+            <p> Hello, how can I help you today?</p>
+        </blockquote>
+    </div>
+    <div id="bottomTextBox">
+        <input type="text" placeholder="Send Message to IRVA here..." id="input" name="input"><br><br>
+        <input type="submit" id="submitButton" value="Send">
+    </div>
+</div>
+<div class="bottomButton">
+        <button id="closeButton" onclick="myFunction()" type="button"><img id="xBox" src='x_box.png'></button>
+</div>
+
+<script>
+    var dt = new Date();
+    document.getElementById('dateTime').innerHTML = dt.toLocaleTimeString();
+</script>
+
+</body>
+</html>
