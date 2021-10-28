@@ -34,4 +34,16 @@ questions = [
         choices: ['What is data governance?', 'What are data definitions?'],
         correct: 1
     },
+    {
+        //About IR
+        str: 'What do you want to know about IR?',
+        choices: ['About', 'Contact'],
+        correct: 1
+    },
+    {
+        //Data Protection
+        str: 'What do you want to know about Data Protection?',
+        choices: ['FERPA Questions', 'What counts as an educational record?', 'What counts as a  school official?', 'What counts as a legitimate educational interest?'],
+        correct: 1
+    }
 ]
