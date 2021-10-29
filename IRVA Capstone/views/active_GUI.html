@@ -34,12 +34,10 @@
         <blockquote class="speechBubble">
             <p> Hello, how can I help you today?</p>
         </blockquote>
-        <form>
-            <input type="radio" id="question1" value="Question 1">
-            <label for="question1">Question 1</label><br>
-            <input type="radio" id="question2" value="Question 2">
-            <label for="question2">Question 2</label><br>
-        </form>
+        <div class="questionButtons">
+            <button onClick="question_one_function()">Question 1</button>
+            <button onClick="question_two_function()">Question 2</button>
+        </div>
     </div>
     <div id="bottomTextBox">
         <input type="text" placeholder="Send Message to IRVA here..." id="input" name="input"><br><br>
