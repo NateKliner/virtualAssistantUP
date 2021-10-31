@@ -51,5 +51,5 @@ questions = [
 ]
 
 function choice1Handler(Answerindex,previousQuestionIndex){
-    
+    //send json (string,choices,index)
 }
