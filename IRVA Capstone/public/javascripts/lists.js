@@ -1,4 +1,8 @@
 questions = [
+    { //Main
+        str: 'How can I help you today?',
+        choices: ['I would like to know about Institutional Data.', 'I would like to know about Data Access', 'I would like to know about External Resources', 'I would like to know about IR', 'I would like to know about Data Governance', 'I would like to know about Data Protection'],
+    },
     { //Data Requests
         str: 'What do you want to know about data Requests?',
         choices: ['I received data but it is innacurate or differs from data on the IR website', 'I want to know more about giving and recieving data requests', 'Can I request data?'],
@@ -7,11 +11,6 @@ questions = [
     { //I received data but it is innacurate or differs from data on the IR website 
         str: 'You may want to contact IR.',
         choices: ['How soon can I hear back?', 'How do i contact IR?'],
-        
-    },
-    { //Main
-        str: 'How can I help you today?',
-        choices: ['I would like to know about Institutional Data.', 'I would like to know about Data Access', 'I would like to know about External Resources', 'I would like to know about IR', 'I would like to know about Data Governance', 'I would like to know about Data Protection'],
         
     },
     { //Data Access
@@ -45,5 +44,12 @@ questions = [
         str: 'What do you want to know about Data Protection?',
         choices: ['FERPA Questions', 'What counts as an educational record?', 'What counts as a  school official?', 'What counts as a legitimate educational interest?'],
         //correct: 1
+    },
+    {
+        str: "Answer to X"
     }
 ]
+
+function choice1Handler(Answerindex,previousQuestionIndex){
+    
+}
