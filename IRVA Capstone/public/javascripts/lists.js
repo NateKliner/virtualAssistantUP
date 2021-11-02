@@ -50,6 +50,7 @@ questions = [
     },
     {
         //About IR
+        //has hyperlink
         str: 'The Office of Institutional Research (IR) serves the university by empowering stakeholders to make data-informed decisions. \
         This includes the following areas: 1) identify data/information needs, \
         2) collect, analyze, interpret and report data/information, \
@@ -228,6 +229,7 @@ questions = [
     },
     {
         //benchmarking data
+        //hyperlink inside
         str: "The IR office website's list of External Resources is available at this link. The IR office's website's External Resources \
         section feature downloadable tutorials on accessing data for benchmarking. Different external resources vary in the level of data \
         detail they provide and in the customizability of choosing comparison schools. Comparing institutions using IPEDS provides the most \
@@ -245,10 +247,126 @@ questions = [
         choices:['Do you have any other questions?'],
     },
     {
-        //
+        //what is data governance and why is it important
+        str: "Data governance is both an organizational process and a structure; it establishes responsibility for data, organizing program \
+        area staff to collaboratively and continuously improve data quality through the systematic creation and enforcement of policies, roles, \
+        responsibilities, and procedures (National Forum on Education Statistics, 2011). Essentially, the ambitious charge for stakeholders involved \
+        in data governance is to develop and support data practices that promote institutional mission fulfillment, support informed decisions, \
+        and facilitate strategic planning.  Ensuring a solid data foundation obliges the collaborative work of leaders and experts across campus \
+        attending to what falls under the data governance umbrella: data definitions, process ownership and authority, accountability, security and \
+        privacy, data access, reporting needs and requirements, and research priorities. A culture of data informed decision-making requires that the university’s \
+        data infrastructure be sound and that campus stakeholders are empowered with timely and accurate data.  A continuous investment of \
+        collective time and resources is necessary to meet today’s extensive demand for informed and nimble decision-making across the university. \
+        As an advocate for robust data governance, the Office of Institutional Research at UP hopes to broadly empower the wise use of data by all \
+        stakeholders involved in achieving the institutional mission. As increasing numbers of data consumers collect and access data, this diffuse \
+        network has the potential to expedite data informed decision-making at the significant risk of creating redundant data silos.  Data governance \
+        encompasses both the top-down and grassroots strategies that establish effective university-wide data practices. The work is not simple, however \
+        the increase in trust and consistency in the data pays dividends.",
+        choices:['Do you have any other questions?'],
+    },
+    {
+        //what is IPEDS
+        str: "From the NCES website: IPEDS is the Integrated Postsecondary Education Data System. It is a system of multiple surveys conducted annually \
+        by the U.S. Department of Education’s National Center for Education Statistics (NCES). IPEDS gathers information from every college, university, \
+        and technical and vocational institution that participates in the federal student financial aid programs. The Higher Education Act of 1965, as amended, \
+        requires that institutions that participate in federal student aid programs report data on enrollments, program completions, graduation rates, faculty \
+        and staff, finances, institutional prices, and student financial aid. These data are made available to students and parents through the College Navigator \
+        college search Web site and to researchers and others through the IPEDS Data Center. The wealth of data available via IPEDS makes it a valuable resource for internal and external stakeholders interested in better understanding and benchmarking postsecondary education institutions.",
+        choices:['Do you have any other questions?'],
+    },
+    {
+        //using college nav to get IPEDS data
+        //hyperlink inside
+        str: "The website lets you enter the name of a specific school or use search options (e.g. enrollment, institution type, admissions selectivity, religious \
+            affiliation) to build a list of schools using specific criteria. Clicking on the name of an individual institution takes you to the most recent IPEDS data \
+            for the school on tuition, financial aid, enrollment, student demographics, admissions, retention rate, graduation rate, lists of programs/majors offered, \
+            service members, varsity athletic teams, accreditations, campus security, and loan default rates. This website is available at this link and is also listed \
+            in the IR website's External Resources.",
+        choices:['Do you have any other questions?'],
+    },
+    {
+        //what is IPEDS data feedback report
+        //hyperlink
+        str: "Every fall, a new Data Feedback Report (DFR) is created and compares UP’s data with a group of peer comparison institutions.  This important benchmarking \
+        document is publicly available.  UP’s DFRs are available in the DFR Archives at this link.  The DFR contains brief data overview of various topics such as enrollment, \
+        degrees, financial aid, retention, graduation, finance, faculty/staff, and libraries.",
+        choices:['Do you have any other questions?'],
+    },//NOTE: IPEDS ON THE DECISION TREE NEEDS TO BE EXPANDED TO LIST OUT THESE QUESTIONS BECAUSE WE WON'T BE ABLE TO FIT THESE ANSWERS ALL ON ONE SCREEN EASILY
+    {
+        //data definitions
+        //hyperlink inside
+        str: "Data definitions can be found by navigating to the Supporting Documents for the Tableau Dashboards or by reading the Data Definitions page. The Institutional \
+        Research Pilots portal space is the intended future space that will host fuller data dictionary documentation. The link will be available via the Data Governance Resources website.",
         choices:['Do you have any other questions?'],        
-    }
-    
+    },
+    {
+        //data governance priorities
+        //hyperlink inside
+        str: "The large group of stakeholders involved in data governance are constantly pursuing multiple, long-term and short-term projects to improve the data infrastructure \
+        of the university.  Some of the latest priorities and projects are listed on the data governance site. ",
+        choices:['Do you have any other questions?'],
+    },//NEEDS TO BE ADDED TO DECISION TREE IN DATA GOVERNANCE
+    {
+        //making time for data related tasks
+        //hyperlink inside
+        str:"The work that any UP employee conducts on data-related tasks can be time-consuming.  However, it's important to document data processes and definitions. \
+        The work is complex and helps offices be prepared to for changes over time.  The IR Office plans to regularly host Data Retreats as a way for any UP employee to \
+        have uninterrupted time and a supportive space to build more efficient data tools that directly assist the office and connect/brainstorm with other offices.  See the \
+        Data Retreat site for more details! ",
+        choices:['Do you have any other questions?'],
+    },//NEEDS TO BE ADDED TO DECISION TREE IN DATA GOVERNANCE
+    {
+        //what is IRB
+        //hyperlink inside
+        str:"The Institutional Review Board (IRB) is the body at the University of Portland that is charged with review and oversight of research and classroom projects \
+        involving human subjects carried out by members of the University community. The principal function of the IRB is to safeguard the rights and welfare of participants \
+        in research activities originating in the University. The IRB exercises oversight and review of research initiated by faculty, staff members, and students in connection \
+        with their respective academic pursuits. More information is available at the IRB website.",
+        choices:['Do you have any other questions?'],
+    },//NEEDS TO BE ADDED TO DECISION TREE IN DATA PROTECTION 
+    {
+        //find basic student data of most recent fall semester
+        //hyperlink inside
+        str: "As the IR Office transitions from the old website to the upgraded website, some features are being maintained yet continually improved. The At a Glance page \
+        compiles tables that used to reside on multiple pages. This includes undergraduate and graduate student enrollment and admissions data.",
+        choices:['Do you have any other questions?'],
+    },
+    {
+        //how many student were enrolled during a certain period of time
+        //hyperlinks inside
+        str:"View the Enrollment Dashboard. The dashboard is powered by Tableau software, which means the data is available all the time, updated regularly and directly from Banner, and is interactive. View the Tableau dashboard site to get oriented and access supporting documentation. IPEDS can be used to find data on other schools. Please see the External Resources FAQ for information on IPEDS and College Navigator.",
+        choices:['Do you have any other questions?'],
+    },
+    {
+        //how many majors were enrolled during a certain period of time
+        //hyperlinks inside
+        str:"View the Enrollment Dashboard. The dashboard is powered by Tableau software, which means the data is available all the time, updated regularly and directly from Banner, and is interactive. The MajorsUnduplicated and MajorsDuplicated tabs correspond to headcounts of primary majors only and headcounts of multiple majors and degrees, respectively.  In other words, use the unduplicated headcount for reports that need to match the total enrollment for the university.  Use the duplicated headcount for departmental reports that need the total headcount of a given major. View the Tableau dashboard site to get oriented and access supporting documentation. IPEDS can be used to find data on other schools. Please see the External Resources FAQ for information on IPEDS and College Navigator.",
+        choices:['Do you have any other questions?'],
+    },
+    {
+      //can I see a breakdown of ethnicity
+      //hyperlink inside
+      str:"Please see the FAQ for What data can I find in the Common Data Set?", 
+      choices:['Do you have any other questions?'], 
+    },
+    {
+        //what was the retention rate for a given cohort
+        //hyperlinks inside
+        str:"View the Retention Dashboard. The dashboard is powered by Tableau software, which means the data is available all the time, updated regularly and directly from Banner, and is interactive. View the Tableau dashboard site to get oriented and access supporting documentation. IPEDS can be used to find data on other schools. Please see the External Resources FAQ for information on IPEDS and College Navigator.",
+        choices:['Do you have any other questions?'], 
+    },
+    {
+        //what was the grad rate for a given cohort
+        //hyperlinks inside
+        str:"View the Graduation Dashboard. The dashboard is powered by Tableau software, which means the data is available all the time, updated regularly and directly from Banner, and is interactive. View the Tableau dashboard site to get oriented and access supporting documentation. IPEDS can be used to find data on other schools. Please see the External Resources FAQ for information on IPEDS and College Navigator.",
+        choices:['Do you have any other questions?'], 
+    },
+    {
+        //how do I get data
+        //hyperlink inside
+        str:"There are multiple ways to access data! The most immediate access for a wide variety of data is through the Office of Institutional Research's website. One of the best ways to navigate the site is to scan through the FAQs to find your question, which will direct you to a location with a relevant answer.  Most questions are covered by the link to Institutional Data.  Second, there are repositories of data that reside externally (e.g. IPEDS, US News & World Report rankings, etc). Please see the link for External Resources to access that information. Third, if the data you are seeking is at the individual student level, please see the FAQs regarding Protecting Data. Lastly, if your data request is not covered, Submit a Data Request.",
+        choices:['Do you have any other questions?'],
+    }//NEEDS TO BE ADDED TO DATA REQUESTS TREE 
 
 ]
 
