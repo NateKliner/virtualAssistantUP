@@ -409,6 +409,12 @@ function choice1Handler(answerIndex,previousQuestionIndex){
             if(answerIndex == 0){
                 newIndex = 6;
             }
+            if(answerIndex == 1){
+                newIndex = 4;
+            }
+            if(answerIndex == 2){
+                newIndex = 5;
+            }
             if(answerIndex == 3){
                 newIndex = 8;
             }
@@ -419,9 +425,48 @@ function choice1Handler(answerIndex,previousQuestionIndex){
                 newIndex = 9;
             }
             break;
+        case 4:
+            if(anwserIndex == 0){
+                newIndex = 13;
+            }
+            if(answerIndex == 1){
+                newIndex = 12;
+            }
+            if(answerIndex == 2){
+                newIndex = //I have a question about Data Requests
+            }
+            break;
+        case 5:
+            if(answerIndex == 0){
+                newIndex = //I have question about IPEDS
+            }
+            if(answerIndex == 1){
+                newIndex = 30
+            }
+            if(answerIndex == 2){
+                newIndex = 29
+            }
+            break;
+        case 6:
+            if(answerIndex == 0){
+                newIndex = 15
+            }
+            if(answerIndex == 1){
+                newIndex = //I have questions about student data
+            }
+            if(answerIndex == 2){
+                newIndex = //17 or 16?
+            }
+            if(answerIndex == 3){
+                newIndex = 16
+            }
+            if(answerIndex == 4){
+                newIndex = 14
+            }
+            break;
         case 7:
             if(answerIndex == 0){
-                //What is data governance
+                newIndex = //What is data governance
             }
             break;
         case 8:
@@ -450,10 +495,6 @@ function choice1Handler(answerIndex,previousQuestionIndex){
             if(answerIndex == 0){
                 newIndex =31;
             }
-
-
-
-
     }
     dictObject = questions[newIndex];
     returnString = dictObject["str"];
