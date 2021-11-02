@@ -265,8 +265,13 @@ questions = [
     },
     {
         //
-        choices:['Do you have any other questions?'], 
+        str:['Do you have any other questions?'], 
         index: 31       
+    },
+    {
+        str: 'What do you want to know about FERPA?',
+        choices: ['What is FERPA and how does it apply?', 'I would like to know more about FERPA standards and individual data.'],
+        index:32
     }
     
 
@@ -274,20 +279,68 @@ questions = [
 
     
 
-function choice1Handler(Answerindex,previousQuestionIndex){
+function choice1Handler(answerIndex,previousQuestionIndex){
     //send json (string,choices,index)
     newIndex = 0
     switch(previousQuestionIndex){
         case 0:
-            if(Answerindex == 0){
-                newIndex = 6
+            if(answerIndex == 0){
+                newIndex = 6;
             }
-        break;
+            if(answerIndex == 3){
+                newIndex = 8;
+            }
+            if(answerIndex == 4){
+                newIndex = 7;
+            }
+            if(answerIndex == 5){
+                newIndex = 9;
+            }
+            break;
+        case 7:
+            if(answerIndex == 0){
+                //What is data governance
+            }
+            break;
+        case 8:
+            if(answerIndex == 0){
+                newIndex = 10;
+            }
+            if(answerIndex == 1){
+                newIndex = 11;
+            }
+            break;
+        case 9:
+            if(answerIndex == 0){
+                newIndex = 32;
+            }
+            if(answerIndex == 1){
+                newIndex = 24;
+            }
+            if(answerIndex == 2){
+                newIndex = 25;
+            }
+            if(answerIndex == 3){
+                newIndex = 26;
+            }
+            break;
+        default:
+            if(answerIndex == 0){
+                newIndex =31;
+            }
+
+
+
+
     }
+    dictObject = questions[newIndex];
+    returnString = dictObject["str"];
+    returnChoices = dictObject["choices"];
+    returnIndex = dictObject["index"];
     Obj = {
-        "String":string[answer],
-        "choices":choice,
-        "index":index
+        "String":returnString,
+        "choices":returnChoices,
+        "index":returnIndex
     }
     return Obj
 }
