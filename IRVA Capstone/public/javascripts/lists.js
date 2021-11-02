@@ -277,8 +277,12 @@ questions = [
 function choice1Handler(Answerindex,previousQuestionIndex){
     //send json (string,choices,index)
     newIndex = 0
-    if(previousQuestionIndex == 0 && Answerindex == 1){
-        newIndex = 1
+    switch(previousQuestionIndex){
+        case 0:
+            if(Answerindex == 0){
+                newIndex = 6
+            }
+        break;
     }
     Obj = {
         "String":string[answer],
