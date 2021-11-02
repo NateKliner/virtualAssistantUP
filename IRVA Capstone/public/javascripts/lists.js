@@ -2,51 +2,49 @@ questions = [
     { //Main
         str: 'How can I help you today?',
         choices: ['I would like to know about Institutional Data.', 'I would like to know about Data Access', 'I would like to know about External Resources', 'I would like to know about IR', 'I would like to know about Data Governance', 'I would like to know about Data Protection'],
+        index: 1
     },
     { //Data Requests
         str: 'What do you want to know about data Requests?',
         choices: ['I received data but it is innacurate or differs from data on the IR website', 'I want to know more about giving and recieving data requests', 'Can I request data?'],
-        
+        index:2
     },
     { //I received data but it is innacurate or differs from data on the IR website 
         str: 'You may want to contact IR.',
         choices: ['How soon can I hear back?', 'How do i contact IR?'],
-        
+        index:3
     },
     { //Data Access
         str: 'What would you like to know about Data access?',
         choices: ['I want to access Tableau Dashboards', 'I want to access grant proposals and reports','I have questions about Data Requests'],
-        
+        index:4
     },
     { //External Resources
         str: 'What would you like to know about External Resources?',
         choices: ['I have questions about IPEDS', 'I have questions about college navigator.','I have questions about benchmarking data'],
-        
+        index:5
     },
     {//Insatitutional Data
         str: 'What would you like to know about institutional Data?',
         choices: ['What is CDS and what data is in it?', 'I have questions about student data.','I have questions about Data Requests','Can I suggest data?', 'I have questions about Tableau Dashboards.'],
-        
+        index:6
     },
     { //Data Governance
         str: 'What would you like about data governance?',
         choices: ['What is data governance?', 'What are data definitions?'],
-        
+        index:7
     },
     {
         //About IR
         str: 'What do you want to know about IR?',
         choices: ['About', 'Contact'],
-        //correct: 1
+        index:8
     },
     {
         //Data Protection
         str: 'What do you want to know about Data Protection?',
         choices: ['FERPA Questions', 'What counts as an educational record?', 'What counts as a  school official?', 'What counts as a legitimate educational interest?'],
-        //correct: 1
-    },
-    {
-        str: "Answer to X"
+        index:9
     },
     {
         //About IR
@@ -58,11 +56,13 @@ questions = [
         /n Mission Statement: The Office of Institutional Research (IR) provides and coordinates information support for reporting, \
         decision-making, and planning activities to help fulfill the stated mission and goals of the University of Portland. ',
         choices:['Do you have any other questions?'],
+        index: 10
     },
     {
         //Contact IR
         str: 'Initial, brief phone calls are appreciated as this contact often helps clarify your request. 503.943.8000',
         choices:['Do you have any other questions?'],
+        index:11
     },
     {
         //Grant Proposals and requests
@@ -70,6 +70,7 @@ questions = [
         The University Relations/Office of Development centralizes the grant process (grant submission and reporting) \
         for the entire University of Portland.',
         choices:['Do you have any other questions?'],
+        index:12
     },
     {
         //Accessing Tableau Dashboards
@@ -78,6 +79,7 @@ questions = [
         The software should be installed on your computer as part of regular system upgrades, however you can download the Reader via \
         the link on the IR site.  Then you will be able to click on the link for the desired internal dashboard to download and view it. ',
         choices:['Do you have any other questions?'],
+        index:13
     },
     {
         //What are Tableau Dashboards
@@ -87,6 +89,7 @@ questions = [
         The dashboards are powered by Tableau software, which means the data is available all the time, \
         updated regularly and directly from Banner, and is interactive.',
         choices:['Do you have any other questions?'],
+        index:14
     },
     {
         //What is CDS and how can I access it
@@ -106,6 +109,7 @@ questions = [
         Annual Expenses (cost of attendance)\n H) Financial Aid (aid awarded to enrolled undergraduates)\n I) Faculty and Class Size \
         (faculty headcount, student to faculty ratio, class size)\n J) Degrees Conferred (degrees awarded by major)',
         choices:['Do you have any other questions?'],
+        index:15
     },
     {
         //How can I suggest new data
@@ -114,6 +118,7 @@ questions = [
         you'd like to see available on the IR Office website, rate the IR Office's service, \
         and provide general feedback.\nClick here to access the feedback form.",
         choices:['Do you have any other questions?'],
+        index:16
     },
     {
         //I am a student can I request data
@@ -122,6 +127,7 @@ questions = [
         and staff on data that assists them with making sound policy decisions.  The personal interest and motivation of the IR office is \
         focused on improving the quality of life for all students.',
         choices:['Do you have any other questions?'],
+        index:17
     },
     {
         //I am a faculty/staff can I request data
@@ -135,12 +141,14 @@ questions = [
         attention.  Therefore, if the purpose of the request ties to these ongoing projects, it is welcome. For requests of individual level \
         data, please refer to FAQs on Data Protection.',
         choices:['Do you have any other questions?'],
+        index: 18
     },
     {
         //I am outside of the UP community can I request data
         str: 'It entirely depends on the purpose of the request, including whether this is a new or recurring request.  \
         Please see other Data Access FAQs for further information.',
         choices:['Do you have any other questions?'],
+        index: 19
     },
     {
         //how soon can I hear back
@@ -150,6 +158,7 @@ questions = [
         to provide as much notice as possible if you have a data request tied to a deadline.  Please make it clear in the data request \
         submission form what your timeline is and feel free to follow up with the IR office, as needed.',
         choices:['Do you have any other questions?'],
+        index:20
     },
     {
         //contacting IR with specific data request
@@ -164,6 +173,7 @@ questions = [
         requesting the same data), it allows the IR office to best prioritize the request, and it makes clear to the IR office when you need \
         the data report.',
         choices:['Do you have any other questions?'],
+        index:21
     },
     {
         //email data request
@@ -173,6 +183,7 @@ questions = [
         will automatically email you a confirmation of your submission. The system also will allow you to save your request as a PDF document \
         that you should save for your records. Please do not email individual staff members with data requests.',
         choices:['Do you have any other questions?'],
+        index:22
     },
     {
         //suggest new terms to add
@@ -180,6 +191,7 @@ questions = [
         str: 'Please feel free to suggest new terms you would like defined to support your data informed activities by reaching out to any \
         staff in the IR office. You can also submit anonymous suggestions and general feedback using the brief, online Feedback Form.',
         choices:['Do you have any other questions?'],
+        index:23
     },
     {
         //what counts as an educational record
@@ -189,6 +201,7 @@ questions = [
         and anything with a student ID number.  The following are NOT educational records: personal notes (e.g. faculty member’s private notes), \
         law enforcement or campus security records, health records, or employment and payroll information.',
         choices:['Do you have any other questions?'],
+        index:24
     },
     {
         //what counts as a school official
@@ -196,12 +209,14 @@ questions = [
         on the Board of Regents, a student serving on an official committee (such as a grievance or disciplinary committee), or a volunteer \
         or outside contractor under certain circumstances.',
         choices:['Do you have any other questions?'],
+        index:25
     },
     {
         //what counts as a legitimate educational interest
         str: 'A legitimate educational interest is defined as the need to review an education record in order to fulfill the school \
         official’s professional responsibilities for the school.',
         choices:['Do you have any other questions?'],
+        index:26
     },
     {
         //what is FERPA and how does it apply
@@ -217,6 +232,7 @@ questions = [
         that accessing financial aid data (e.g. Pell eligibility) at the individual level is only possible under a restricted set of \
         circumstances.  The IR Office generally only provides data at the aggregated level.',
         choices:['Do you have any other questions?'],
+        index:27
     },
     {
         //FERPA standards and individual data
@@ -225,6 +241,7 @@ questions = [
         accessing individual level data.  Failure to provide an identifier increases the complexity of the data request, imposes a significant \
         resource burden on the IR office to access and clean the data, and lengthens the turnaround to respond to a data request.',
         choices:['Do you have any other questions?'],
+        index:28
     },
     {
         //benchmarking data
@@ -234,6 +251,7 @@ questions = [
         detailed benchmarking data. College Navigator provides the most commonly requested IPEDS data. IPEDS Data Feedback Reports provide \
         overview data with a pre-selected group of comparison schools.",
         choices:['Do you have any other questions?'],
+        index:29
     },
     {
         //college navigator
@@ -243,10 +261,12 @@ questions = [
         FAQs for a list of what kind of data is available and how to use this data source for benchmarking. This website is available at this \
         link and is also listed in the IR website's External Resources.",
         choices:['Do you have any other questions?'],
+        index:30
     },
     {
         //
-        choices:['Do you have any other questions?'],        
+        choices:['Do you have any other questions?'], 
+        index: 31       
     }
     
 
@@ -256,4 +276,14 @@ questions = [
 
 function choice1Handler(Answerindex,previousQuestionIndex){
     //send json (string,choices,index)
+    newIndex = 0
+    if(previousQuestionIndex == 0 && Answerindex == 1){
+        newIndex = 1
+    }
+    Obj = {
+        "String":string[answer],
+        "choices":choice,
+        "index":index
+    }
+    return Obj
 }
