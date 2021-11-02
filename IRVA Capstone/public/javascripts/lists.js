@@ -385,8 +385,8 @@ questions = [
         //hyperlink inside
         str:"There are multiple ways to access data! The most immediate access for a wide variety of data is through the Office of Institutional Research's website. One of the best ways to navigate the site is to scan through the FAQs to find your question, which will direct you to a location with a relevant answer.  Most questions are covered by the link to Institutional Data.  Second, there are repositories of data that reside externally (e.g. IPEDS, US News & World Report rankings, etc). Please see the link for External Resources to access that information. Third, if the data you are seeking is at the individual student level, please see the FAQs regarding Protecting Data. Lastly, if your data request is not covered, Submit a Data Request.",
         choices:['Do you have any other questions?'],
-    }//NEEDS TO BE ADDED TO DATA REQUESTS TREE 
-        //
+    },//NEEDS TO BE ADDED TO DATA REQUESTS TREE 
+    {
         str:['Do you have any other questions?'], 
         index: 31       
     },
