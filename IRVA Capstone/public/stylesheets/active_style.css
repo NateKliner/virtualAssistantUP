@@ -78,8 +78,8 @@ input {
   height: 10%;
 }
 
-.questonButtons button{
-    display: block;
+.questonButtons{
+  float: right;
 }
 
 .speechBubble {
