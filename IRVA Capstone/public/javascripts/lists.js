@@ -523,9 +523,9 @@ function choice1Handler(answerIndex,previousQuestionIndex){
     returnChoices = dictObject["choices"];
     returnIndex = dictObject["index"];
     Obj = {
-        "String":returnString,
-        "choices":returnChoices,
-        "index":returnIndex
-    }
-    return Obj
+        message : returnString,
+        choices : returnChoices,
+        index : returnIndex
+    };
+    return Obj;
 }
