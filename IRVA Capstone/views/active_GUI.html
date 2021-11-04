@@ -4,6 +4,7 @@
 <title>IRVA: ChatBot</title>
 </head>
 <link rel="stylesheet" href="../public/stylesheets/active_style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
     function myFunction(){
    // similar behavior as an HTTP redirect
@@ -13,6 +14,9 @@
    window.location.href =("idle_GUI.html");
 }; 
 </script>
+<script src="../public/javascripts/question1_handler.js"></script>
+<script src="../public/javascripts/list1.js"></script>
+
 
 <body>
 
@@ -31,14 +35,16 @@
         </span>
     </p>
     <div id="innerChat">
-        <blockquote class="speechBubble">
-            <p> Hello, how can I help you today?</p>
+        <blockquote class="speechBubble" id="1">
+            <p> How can I help you today?</p>
         </blockquote>
-        <div class="questionButtons">
-            <button onClick="question_one_function()">Question 1</button>
-        </div>
-        <div class="questionButtons">
-            <button onClick="question_two_function()">Question 2</button>
+        <div class="questionButtons", id="1">
+            <button class= "question" prevID="1" id="6" onClick="question_one_function()">I would like to know about Institutional Data.</button>
+            <button class= "question" prevID="1" id="4" onClick="question_one_function()">I would like to know about Data Access.</button>
+            <button class= "question" prevID="1" id="5" onClick="question_one_function()">I would like to know about External Resources.</button>
+            <button class= "question" prevID="1" id="8" onClick="question_one_function()">I would like to know about IR.</button>
+            <button class= "question" prevID="1" id="7" onClick="question_one_function()">I would like to know about Data Protection.</button>
+            <button class= "question" prevID="1" id="9" onClick="question_one_function()">I would like to know about Data Access.</button>
         </div>
     </div>
     <div id="bottomTextBox">
