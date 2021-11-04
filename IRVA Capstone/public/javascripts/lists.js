@@ -31,7 +31,7 @@ questions = [
     },
     { //Data Governance
         str: 'What would you like about data governance?',
-        choices: ['What is data governance?', 'What are data definitions?'],
+        choices: ['What is data governance?', 'What are data definitions?','I would like to know about data governance priorities.','How does IR make time for Data related tasks?' ],
         index:7
     },
     {
@@ -409,6 +409,11 @@ questions = [
         str: 'What do you want to know about FERPA?',
         choices: ['What is FERPA and how does it apply?', 'I would like to know more about FERPA standards and individual data.'],
         index:32
+    },
+    {
+        str: 'Would you like to request data?',
+        choices: ['I am a student','I am faculty/staff at University of Portland','I am a member of the general public', 'How soon can I hear back','I would like to email a data request','How do I contact IR with a specific request?'],
+        index: 33
     }
     
 
@@ -446,6 +451,18 @@ function choice1Handler(answerIndex,previousQuestionIndex){
             if(answerIndex == 5){
                 newIndex = 9;
             }
+            break;
+        case 2:
+            if(answerIndex == 0){
+                newIndex = 3;
+            }
+            if(answerIndex == 1){
+                newIndex = 4;
+            }
+            if(answerIndex == 2){
+                newIndex = 33;
+            }
+            
             break;
         case 4:
             if(anwserIndex == 0){
@@ -488,8 +505,18 @@ function choice1Handler(answerIndex,previousQuestionIndex){
             break;
         case 7:
             if(answerIndex == 0){
-                newIndex = 38//What is data governance (still needs fixing)
+                newIndex = 33//What is data governance (still needs fixing)
             }
+            if(answerIndex == 1){
+                newIndex = 37;
+            }
+            if(answerIndex == 2){
+                newIndex = 38;
+            }
+            if(answerIndex == 3){
+                newIndex = 39;
+            }
+            
             break;
         case 8:
             if(answerIndex == 0){
@@ -511,6 +538,34 @@ function choice1Handler(answerIndex,previousQuestionIndex){
             }
             if(answerIndex == 3){
                 newIndex = 26;
+            }
+            break;
+        case 32:
+            if(answerIndex == 0){
+                newIndex = 27;
+            }
+            if(answerIndex == 1){
+                newIndex = 28;
+            }
+            break;
+        case 33:
+            if(answerIndex == 0){
+                newIndex = 17;
+            }
+            if(answerIndex == 1){
+                newIndex = 18;
+            }
+            if(answerIndex == 2){
+                newIndex = 19;
+            }
+            if(answerIndex == 3){
+                newIndex = 20;
+            }
+            if(answerIndex == 4){
+                newIndex = 22;
+            }
+            if(answerIndex == 5){
+                newIndex = 21;
             }
             break;
         default:
