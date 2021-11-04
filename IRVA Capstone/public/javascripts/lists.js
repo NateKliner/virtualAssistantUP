@@ -282,6 +282,7 @@ questions = [
         encompasses both the top-down and grassroots strategies that establish effective university-wide data practices. The work is not simple, however \
         the increase in trust and consistency in the data pays dividends.",
         choices:['Do you have any other questions?'],
+        index:33
     },
     {
         //what is IPEDS
@@ -292,6 +293,7 @@ questions = [
         and staff, finances, institutional prices, and student financial aid. These data are made available to students and parents through the College Navigator \
         college search Web site and to researchers and others through the IPEDS Data Center. The wealth of data available via IPEDS makes it a valuable resource for internal and external stakeholders interested in better understanding and benchmarking postsecondary education institutions.",
         choices:['Do you have any other questions?'],
+        index: 34
     },
     {
         //using college nav to get IPEDS data
@@ -302,6 +304,7 @@ questions = [
             service members, varsity athletic teams, accreditations, campus security, and loan default rates. This website is available at this link and is also listed \
             in the IR website's External Resources.",
         choices:['Do you have any other questions?'],
+        index: 35
     },
     {
         //what is IPEDS data feedback report
@@ -310,13 +313,15 @@ questions = [
         document is publicly available.  UP’s DFRs are available in the DFR Archives at this link.  The DFR contains brief data overview of various topics such as enrollment, \
         degrees, financial aid, retention, graduation, finance, faculty/staff, and libraries.",
         choices:['Do you have any other questions?'],
+        index:36
     },//NOTE: IPEDS ON THE DECISION TREE NEEDS TO BE EXPANDED TO LIST OUT THESE QUESTIONS BECAUSE WE WON'T BE ABLE TO FIT THESE ANSWERS ALL ON ONE SCREEN EASILY
     {
         //data definitions
         //hyperlink inside
         str: "Data definitions can be found by navigating to the Supporting Documents for the Tableau Dashboards or by reading the Data Definitions page. The Institutional \
         Research Pilots portal space is the intended future space that will host fuller data dictionary documentation. The link will be available via the Data Governance Resources website.",
-        choices:['Do you have any other questions?'],        
+        choices:['Do you have any other questions?'],  
+        index:37      
     },
     {
         //data governance priorities
@@ -324,6 +329,7 @@ questions = [
         str: "The large group of stakeholders involved in data governance are constantly pursuing multiple, long-term and short-term projects to improve the data infrastructure \
         of the university.  Some of the latest priorities and projects are listed on the data governance site. ",
         choices:['Do you have any other questions?'],
+        index:38
     },//NEEDS TO BE ADDED TO DECISION TREE IN DATA GOVERNANCE
     {
         //making time for data related tasks
@@ -333,6 +339,7 @@ questions = [
         have uninterrupted time and a supportive space to build more efficient data tools that directly assist the office and connect/brainstorm with other offices.  See the \
         Data Retreat site for more details! ",
         choices:['Do you have any other questions?'],
+        index:39
     },//NEEDS TO BE ADDED TO DECISION TREE IN DATA GOVERNANCE
     {
         //what is IRB
@@ -342,6 +349,7 @@ questions = [
         in research activities originating in the University. The IRB exercises oversight and review of research initiated by faculty, staff members, and students in connection \
         with their respective academic pursuits. More information is available at the IRB website.",
         choices:['Do you have any other questions?'],
+        index: 40
     },//NEEDS TO BE ADDED TO DECISION TREE IN DATA PROTECTION 
     {
         //find basic student data of most recent fall semester
@@ -349,42 +357,49 @@ questions = [
         str: "As the IR Office transitions from the old website to the upgraded website, some features are being maintained yet continually improved. The At a Glance page \
         compiles tables that used to reside on multiple pages. This includes undergraduate and graduate student enrollment and admissions data.",
         choices:['Do you have any other questions?'],
+        index:41
     },
     {
         //how many student were enrolled during a certain period of time
         //hyperlinks inside
         str:"View the Enrollment Dashboard. The dashboard is powered by Tableau software, which means the data is available all the time, updated regularly and directly from Banner, and is interactive. View the Tableau dashboard site to get oriented and access supporting documentation. IPEDS can be used to find data on other schools. Please see the External Resources FAQ for information on IPEDS and College Navigator.",
         choices:['Do you have any other questions?'],
+        index:42
     },
     {
         //how many majors were enrolled during a certain period of time
         //hyperlinks inside
         str:"View the Enrollment Dashboard. The dashboard is powered by Tableau software, which means the data is available all the time, updated regularly and directly from Banner, and is interactive. The MajorsUnduplicated and MajorsDuplicated tabs correspond to headcounts of primary majors only and headcounts of multiple majors and degrees, respectively.  In other words, use the unduplicated headcount for reports that need to match the total enrollment for the university.  Use the duplicated headcount for departmental reports that need the total headcount of a given major. View the Tableau dashboard site to get oriented and access supporting documentation. IPEDS can be used to find data on other schools. Please see the External Resources FAQ for information on IPEDS and College Navigator.",
         choices:['Do you have any other questions?'],
+        index:43
     },
     {
       //can I see a breakdown of ethnicity
       //hyperlink inside
       str:"Please see the FAQ for What data can I find in the Common Data Set?", 
       choices:['Do you have any other questions?'], 
+      index: 44
     },
     {
         //what was the retention rate for a given cohort
         //hyperlinks inside
         str:"View the Retention Dashboard. The dashboard is powered by Tableau software, which means the data is available all the time, updated regularly and directly from Banner, and is interactive. View the Tableau dashboard site to get oriented and access supporting documentation. IPEDS can be used to find data on other schools. Please see the External Resources FAQ for information on IPEDS and College Navigator.",
         choices:['Do you have any other questions?'], 
+        index: 45
     },
     {
         //what was the grad rate for a given cohort
         //hyperlinks inside
         str:"View the Graduation Dashboard. The dashboard is powered by Tableau software, which means the data is available all the time, updated regularly and directly from Banner, and is interactive. View the Tableau dashboard site to get oriented and access supporting documentation. IPEDS can be used to find data on other schools. Please see the External Resources FAQ for information on IPEDS and College Navigator.",
         choices:['Do you have any other questions?'], 
+        index:46
     },
     {
         //how do I get data
         //hyperlink inside
         str:"There are multiple ways to access data! The most immediate access for a wide variety of data is through the Office of Institutional Research's website. One of the best ways to navigate the site is to scan through the FAQs to find your question, which will direct you to a location with a relevant answer.  Most questions are covered by the link to Institutional Data.  Second, there are repositories of data that reside externally (e.g. IPEDS, US News & World Report rankings, etc). Please see the link for External Resources to access that information. Third, if the data you are seeking is at the individual student level, please see the FAQs regarding Protecting Data. Lastly, if your data request is not covered, Submit a Data Request.",
         choices:['Do you have any other questions?'],
+        index:47
     },//NEEDS TO BE ADDED TO DATA REQUESTS TREE 
     {
         str:['Do you have any other questions?'], 
@@ -400,7 +415,14 @@ questions = [
 ]
 
     
-
+/**
+ * 
+ * @param {*} answerIndex 
+ * @param {*} previousQuestionIndex 
+ * @returns obj
+ * 
+ * Still need to fix noted and add more questions
+ */
 function choice1Handler(answerIndex,previousQuestionIndex){
     //send json (string,choices,index)
     newIndex = 0
@@ -433,12 +455,12 @@ function choice1Handler(answerIndex,previousQuestionIndex){
                 newIndex = 12;
             }
             if(answerIndex == 2){
-                newIndex = //I have a question about Data Requests
+                newIndex = 47//I have a question about Data Requests
             }
             break;
         case 5:
             if(answerIndex == 0){
-                newIndex = //I have question about IPEDS
+                newIndex = 36//I have question about IPEDS
             }
             if(answerIndex == 1){
                 newIndex = 30
@@ -452,10 +474,10 @@ function choice1Handler(answerIndex,previousQuestionIndex){
                 newIndex = 15
             }
             if(answerIndex == 1){
-                newIndex = //I have questions about student data
+                //newIndex = //I have questions about student data need a student breakdown
             }
             if(answerIndex == 2){
-                newIndex = //17 or 16?
+                newIndex =17 //17 or 16?
             }
             if(answerIndex == 3){
                 newIndex = 16
@@ -466,7 +488,7 @@ function choice1Handler(answerIndex,previousQuestionIndex){
             break;
         case 7:
             if(answerIndex == 0){
-                newIndex = //What is data governance
+                newIndex = 38//What is data governance (still needs fixing)
             }
             break;
         case 8:
