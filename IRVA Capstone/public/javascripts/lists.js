@@ -30,7 +30,7 @@ questions = [
         index:6
     },
     { //Data Governance
-        str: 'What would you like about data governance?',
+        str: 'What would you like to know about data governance?',
         choices: ['What is data governance?', 'What are data definitions?','I would like to know about data governance priorities.','How does IR make time for Data related tasks?' ],
         index:7
     },
@@ -431,6 +431,7 @@ questions = [
 function choice1Handler(answerIndex,previousQuestionIndex){
     //send json (string,choices,index)
     newIndex = 0
+    
     switch(previousQuestionIndex){
         case 0:
             if(answerIndex == 0){

@@ -7,6 +7,7 @@ $(document).ready(function() {
 
       // call other function here:
       var questionIndices = choice1Handler(questionClicked, prevQuestion);
+      console.log(questionIndices);
       // continue here
 
       nextMessage.innerHTML(questionIndices.message);
