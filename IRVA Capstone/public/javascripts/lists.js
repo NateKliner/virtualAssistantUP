@@ -30,7 +30,7 @@ questions = [
         index:6
     },
     { //Data Governance
-        str: 'What would you like to know about data governance?',
+        str: 'What would you like about data governance?',
         choices: ['What is data governance?', 'What are data definitions?','I would like to know about data governance priorities.','How does IR make time for Data related tasks?' ],
         index:7
     },
@@ -431,9 +431,10 @@ questions = [
 function choice1Handler(answerIndex,previousQuestionIndex){
     //send json (string,choices,index)
     newIndex = 0
-    
+    console.log("Parameters: " +answerIndex +" " + previousQuestionIndex);
     switch(previousQuestionIndex){
         case 0:
+            console.log("here first");
             if(answerIndex == 0){
                 newIndex = 6;
             }
@@ -451,6 +452,7 @@ function choice1Handler(answerIndex,previousQuestionIndex){
             }
             if(answerIndex == 5){
                 newIndex = 9;
+                console.log("here");
             }
             break;
         case 2:
@@ -541,6 +543,11 @@ function choice1Handler(answerIndex,previousQuestionIndex){
                 newIndex = 26;
             }
             break;
+        case 25:
+            if(answerIndex == 0) {
+                newIndex = 1;
+            }
+            break;
         case 32:
             if(answerIndex == 0){
                 newIndex = 27;
@@ -590,10 +597,12 @@ function choice1Handler(answerIndex,previousQuestionIndex){
             }
             if(answerIndex == 5){
                 newIndex = 9;
+                console.log("default");
             }
             break;
     }
-    return questions[newIndex];
+    console.log("New:" + newIndex);
+    return questions[newIndex-1];
     /* returnString = dictObject["str"];
     returnChoices = dictObject["choices"];
     returnIndex = dictObject["index"];
