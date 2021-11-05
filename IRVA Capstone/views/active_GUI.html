@@ -14,8 +14,8 @@
    window.location.href =("idle_GUI.html");
 }; 
 </script>
-<script src="../public/javascripts/question1_handler.js"></script>
 <script src="../public/javascripts/list1.js"></script>
+<script src="../public/javascripts/question1_Handler.js"></script>
 
 
 <body>
@@ -35,16 +35,16 @@
         </span>
     </p>
     <div id="innerChat">
-        <blockquote class="speechBubble" id="1">
-            <p> How can I help you today?</p>
+        <blockquote class="speechBubble" id="botMessage">
+            <p id="botMessage"> How can I help you today?</p>
         </blockquote>
-        <div class="questionButtons", id="1">
-            <button class= "question" prevID="1" id="6" onClick="question_one_function()">I would like to know about Institutional Data.</button>
-            <button class= "question" prevID="1" id="4" onClick="question_one_function()">I would like to know about Data Access.</button>
-            <button class= "question" prevID="1" id="5" onClick="question_one_function()">I would like to know about External Resources.</button>
-            <button class= "question" prevID="1" id="8" onClick="question_one_function()">I would like to know about IR.</button>
-            <button class= "question" prevID="1" id="7" onClick="question_one_function()">I would like to know about Data Protection.</button>
-            <button class= "question" prevID="1" id="9" onClick="question_one_function()">I would like to know about Data Access.</button>
+        <div class="questionButtons", id="questionButtons">
+            <button class= "question" prevID="0" id="0" >I would like to know about Institutional Data.</button>
+            <button class= "question" prevID="0" id="1" >I would like to know about Data Access.</button>
+            <button class= "question" prevID="0" id="2" >I would like to know about External Resources.</button>
+            <button class= "question" prevID="0" id="3" >I would like to know about IR.</button>
+            <button class= "question" prevID="0" id="4" >I would like to know about Data Protection.</button>
+            <button class= "question" prevID="0" id="5" >I would like to know about Data Access.</button>
         </div>
     </div>
     <div id="bottomTextBox">
