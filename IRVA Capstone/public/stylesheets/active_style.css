@@ -39,7 +39,7 @@ input {
 .outerChatBorder {
   border: 3px solid rgb(184, 184, 184);
   border-style: groove groove groove groove;
-  width: 100%;
+  width: 400px;
   height: 500px;
   border-radius: 6px;
   background-color: white;
@@ -64,9 +64,12 @@ input {
 }
 
 #innerChat{
-  width: 75%;
+  width: inherit;
   align-content: center;
   height: 340px;
+  overflow-y:auto;
+  overflow-x:hidden;
+
 }
 
 #bottomTextBox {
@@ -78,7 +81,7 @@ input {
   height: 10%;
 }
 
-.questonButtons{
+#questionButtons{
   float: right;
 }
 
@@ -91,7 +94,7 @@ font-size: 15px;
 font-weight: 200;
 background: #8CA8D8;
 color: white;
-width: 100%;
+width: 80%;
 }
 
 
