@@ -1,26 +1,30 @@
 $(document).ready(function() {
-    $("#.question").click(function(e) {
-      var nextMessage = document.createElement("speechBubble");
-      var nextQuestions = document.createElement("questionButtons");
+    $(".question").click(function(e) {
+
       var questionClicked = e.target.id;
-      var prevQuestion = e.target.prevID;
+      var prevQuestion = e.target.getAttribute('prevID');
+      var prevNum = parseInt(prevQuestion);
 
       // call other function here:
-      var questionIndices = choice1Handler(questionClicked, prevQuestion);
-      console.log(questionIndices);
+      var questionIndices = choice1Handler(questionClicked, prevNum);
+      console.log(questionIndices.choices[0]);
+      console.log(questionIndices.index);
       // continue here
+      $("#botMessage").text(questionIndices.str)
+      console.log(questionIndices.str);
 
-      nextMessage.innerHTML(questionIndices.message);
-      nextMessage.setAttribute("id", questionIndices.returnIndex);
-      nextQuestions.setAttribute("id", questionIndices.returnIndex);
-      document.getElementById('innerChat').appendChild(nextMessage);
-      document.getElementById('innerChat').appendChild(nextQuestions);
+      // var currentQuestion = document.createElement("button");
+      // currentQuestion.setAttribute("id", questionIndices.index);
+      // currentQuestion.setAttribute("class", "question");
 
-      var currentQuestion = document.createElement("question");
+      $(".question").hide();
+
       for(let i = 0; i < questionIndices.choices.length; i++) {
-        currentQuestion.innerHTML(questionIndices.choices[i].value);
-        currentQuestion.setAttribute("prevID", questionIndices.returnIndex);
-        document.getElementById(questionIndices.returnIndex).appendChild(currentQuestion);
+        $("#"+i).show();
+        console.log("Current iteration: "+ i);
+        $("#"+i).html(questionIndices.choices[i]);
+        console.log(questionIndices.choices[i]);
+        $("#"+i).attr("prevID", questionIndices.index);
       }
     })
   });
