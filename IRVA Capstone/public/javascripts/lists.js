@@ -569,9 +569,28 @@ function choice1Handler(answerIndex,previousQuestionIndex){
             }
             break;
         default:
+            // if(answerIndex == 0){
+            //     newIndex =31;
+            // }
             if(answerIndex == 0){
-                newIndex =31;
+                newIndex = 6;
             }
+            if(answerIndex == 1){
+                newIndex = 4;
+            }
+            if(answerIndex == 2){
+                newIndex = 5;
+            }
+            if(answerIndex == 3){
+                newIndex = 8;
+            }
+            if(answerIndex == 4){
+                newIndex = 7;
+            }
+            if(answerIndex == 5){
+                newIndex = 9;
+            }
+            break;
     }
     return questions[newIndex];
     /* returnString = dictObject["str"];
