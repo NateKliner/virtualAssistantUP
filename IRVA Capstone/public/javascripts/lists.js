@@ -578,6 +578,7 @@ function choice1Handler(answerIndex,previousQuestionIndex){
     returnChoices = dictObject["choices"];
     returnIndex = dictObject["index"];
     Obj = {
+        route: newIndex,
         message : returnString,
         choices : returnChoices,
         index : returnIndex
