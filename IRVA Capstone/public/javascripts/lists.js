@@ -573,15 +573,14 @@ function choice1Handler(answerIndex,previousQuestionIndex){
                 newIndex =31;
             }
     }
-    dictObject = questions[newIndex];
-    returnString = dictObject["str"];
+    return questions[newIndex];
+    /* returnString = dictObject["str"];
     returnChoices = dictObject["choices"];
     returnIndex = dictObject["index"];
     Obj = {
-        route: newIndex,
         message : returnString,
         choices : returnChoices,
         index : returnIndex
-    };
-    return Obj;
+    }; */
+    
 }
