@@ -419,7 +419,63 @@ questions = [
 
 ]
 
-    
+/**
+ * 
+ * answer indexes below 
+ */
+
+//1:How can I help you today?
+//2:What do you want to know about data Requests?
+//3:You may want to contact IR.
+//4:What would you like to know about Data access?
+//5:What would you like to know about External Resources?
+//6:What would you like to know about institutional Data?
+//7:What would you like about data governance?
+//8:What do you want to know about IR?
+//9:What do you want to know about Data Protection?
+//10:About IR
+//11:Contact IR
+//12:Grants and Proposals
+//13:Accessing Tableu
+//14:What are Tableu
+//15:What is CDS
+//16:Suggest Data
+//17:Student Requesting
+//18:Professor Staff requesting
+//19:Outside UP requesting
+//20:how soon can I hear back
+//21:contacting IR with specific request
+//22:email data to IR
+//23:suggest new terms
+//24:what counts as educational record
+//25:what counts as school official
+//26:what counts as legit educational interest
+//27:what is FERPA and how does it apply
+//28:what are FERPA's standards
+//29:benchmarking data
+//30:college navigator
+
+//31:Do you have any other questions?
+//32:What do you want to know about FERPA?
+
+//33:what is data governance and why is it important
+//34:what is IPEDS
+//35:use college navigator to get IPEDS data
+//36:what is IPEDS data feedback report
+//37:data definitions
+//38:data governance priorities
+//39:making time for data related tasks
+//40:what is IRB
+//41:student data of fall semester
+//42:how many students were enrolled during certain period of time
+//43:how many majors were enrolled during certain period of time
+//44:breakdown of ethnicity
+//45:retention rate for given cohort
+//46:grad rate for given cohort
+//47:how do I get data
+
+
+
 /**
  * 
  * @param {*} answerIndex 
@@ -436,45 +492,45 @@ function choice1Handler(answerIndex,previousQuestionIndex){
         case 0:
             console.log("here first");
             if(answerIndex == 0){
-                newIndex = 6;
+                newIndex = 6;//6:What would you like to know about institutional Data?
             }
-            if(answerIndex == 1){
-                newIndex = 4;
+            if(answerIndex == 1){//How can I help you today?
+                newIndex = 4;//4:What would you like to know about Data access?
             }
-            if(answerIndex == 2){
-                newIndex = 5;
+            if(answerIndex == 2){//What do you want to know about data Requests?
+                newIndex = 5;//5:What would you like to know about External Resources?
             }
-            if(answerIndex == 3){
-                newIndex = 8;
+            if(answerIndex == 3){//3:You may want to contact IR.
+                newIndex = 8;//8:What do you want to know about IR?
             }
-            if(answerIndex == 4){
-                newIndex = 7;
+            if(answerIndex == 4){//4:What would you like to know about Data access?
+                newIndex = 7;//7:What would you like about data governance?
             }
-            if(answerIndex == 5){
-                newIndex = 9;
+            if(answerIndex == 5){//5:What would you like to know about External Resources?
+                newIndex = 9;//9:What do you want to know about Data Protection?
                 console.log("here");
             }
             break;
         case 2:
             if(answerIndex == 0){
-                newIndex = 3;
+                newIndex = 3;//3:You may want to contact IR.
             }
-            if(answerIndex == 1){
-                newIndex = 4;
+            if(answerIndex == 1){//How can I help you today?
+                newIndex = 4;//4:What would you like to know about Data access?
             }
-            if(answerIndex == 2){
+            if(answerIndex == 2){//What do you want to know about data Requests?
                 newIndex = 33;
             }
             
             break;
         case 4:
             if(anwserIndex == 0){
-                newIndex = 13;
+                newIndex = 13;//13:Accessing Tableu
             }
-            if(answerIndex == 1){
-                newIndex = 12;
+            if(answerIndex == 1){//How can I help you today?
+                newIndex = 12;//12:Grants and Proposals
             }
-            if(answerIndex == 2){
+            if(answerIndex == 2){//What do you want to know about data Requests?
                 newIndex = 47//I have a question about Data Requests
             }
             break;
@@ -482,98 +538,99 @@ function choice1Handler(answerIndex,previousQuestionIndex){
             if(answerIndex == 0){
                 newIndex = 36//I have question about IPEDS
             }
-            if(answerIndex == 1){
-                newIndex = 30
+            if(answerIndex == 1){//How can I help you today?
+                newIndex = 30//30:college navigator
             }
-            if(answerIndex == 2){
-                newIndex = 29
+            if(answerIndex == 2){//What do you want to know about data Requests?
+                newIndex = 29//29:benchmarking data
             }
             break;
         case 6:
             if(answerIndex == 0){
-                newIndex = 15
+                newIndex = 15//15:What is CDS
             }
-            if(answerIndex == 1){
-                //newIndex = //I have questions about student data need a student breakdown
-            }
-            if(answerIndex == 2){
+            if(answerIndex == 1){//How can I help you today?
+                newIndex = 41 //I have questions about student data need a student breakdown
+            }//I think this one is fixed
+            if(answerIndex == 2){//What do you want to know about data Requests?
                 newIndex =17 //17 or 16?
+                //17:Student Requesting
             }
-            if(answerIndex == 3){
-                newIndex = 16
+            if(answerIndex == 3){//3:You may want to contact IR.
+                newIndex = 16//16:Suggest Data
             }
-            if(answerIndex == 4){
-                newIndex = 14
+            if(answerIndex == 4){//4:What would you like to know about Data access?
+                newIndex = 14//14:What are Tableu
             }
             break;
         case 7:
             if(answerIndex == 0){
                 newIndex = 33//What is data governance (still needs fixing)
             }
-            if(answerIndex == 1){
-                newIndex = 37;
+            if(answerIndex == 1){//How can I help you today?
+                newIndex = 37;//37:data definitions
             }
-            if(answerIndex == 2){
-                newIndex = 38;
+            if(answerIndex == 2){//What do you want to know about data Requests?
+                newIndex = 38;//38:data governance priorities
             }
-            if(answerIndex == 3){
-                newIndex = 39;
+            if(answerIndex == 3){//3:You may want to contact IR.
+                newIndex = 39;//39:making time for data related tasks
             }
             
             break;
         case 8:
             if(answerIndex == 0){
-                newIndex = 10;
+                newIndex = 10;//10:About IR
             }
-            if(answerIndex == 1){
-                newIndex = 11;
+            if(answerIndex == 1){//How can I help you today?
+                newIndex = 11;//11:Contact IR
             }
             break;
         case 9:
             if(answerIndex == 0){
-                newIndex = 32;
+                newIndex = 32;//32:What do you want to know about FERPA?
             }
-            if(answerIndex == 1){
-                newIndex = 24;
+            if(answerIndex == 1){//How can I help you today?
+                newIndex = 24;//24:what counts as educational record
             }
-            if(answerIndex == 2){
-                newIndex = 25;
+            if(answerIndex == 2){//What do you want to know about data Requests?
+                newIndex = 25;//25:what counts as school official
             }
-            if(answerIndex == 3){
-                newIndex = 26;
+            if(answerIndex == 3){//3:You may want to contact IR.
+                newIndex = 26;//26:what counts as legit educational interest
             }
             break;
         case 25:
             if(answerIndex == 0) {
-                newIndex = 1;
+                newIndex = 1;//How can I help you today?
             }
             break;
         case 32:
             if(answerIndex == 0){
-                newIndex = 27;
+                newIndex = 27;//27:what is FERPA and how does it apply
             }
-            if(answerIndex == 1){
-                newIndex = 28;
+            if(answerIndex == 1){//How can I help you today?
+                newIndex = 28;//28:what are FERPA's standards
             }
             break;
         case 33:
             if(answerIndex == 0){
-                newIndex = 17;
+                newIndex = 17;//17:Student Requesting
             }
-            if(answerIndex == 1){
-                newIndex = 18;
+            if(answerIndex == 1){//How can I help you today?
+                newIndex = 18;//18:Professor Staff requesting
             }
-            if(answerIndex == 2){
-                newIndex = 19;
+            if(answerIndex == 2){//What do you want to know about data Requests?
+                newIndex = 19;//19:Outside UP requesting
             }
-            if(answerIndex == 3){
-                newIndex = 20;
+            if(answerIndex == 3){//3:You may want to contact IR.
+                newIndex = 20;//20:how soon can I hear back
             }
-            if(answerIndex == 4){
-                newIndex = 22;
+            if(answerIndex == 4){//4:What would you like to know about Data access?
+                newIndex = 22;//22:email data to IR
             }
-            if(answerIndex == 5){
-                newIndex = 21;
+            if(answerIndex == 5){//5:What would you like to know about External Resources?
+                newIndex = 21;//21:contacting IR with specific request
             }
             break;
         default:
@@ -581,22 +638,22 @@ function choice1Handler(answerIndex,previousQuestionIndex){
             //     newIndex =31;
             // }
             if(answerIndex == 0){
-                newIndex = 6;
+                newIndex = 6;//6:What would you like to know about institutional Data?
             }
-            if(answerIndex == 1){
-                newIndex = 4;
+            if(answerIndex == 1){//How can I help you today?
+                newIndex = 4;//4:What would you like to know about Data access?
             }
-            if(answerIndex == 2){
-                newIndex = 5;
+            if(answerIndex == 2){//What do you want to know about data Requests?
+                newIndex = 5;//5:What would you like to know about External Resources?
             }
-            if(answerIndex == 3){
-                newIndex = 8;
+            if(answerIndex == 3){//3:You may want to contact IR.
+                newIndex = 8;//8:What do you want to know about IR?
             }
-            if(answerIndex == 4){
-                newIndex = 7;
+            if(answerIndex == 4){//4:What would you like to know about Data access?
+                newIndex = 7;//7:What would you like about data governance?
             }
-            if(answerIndex == 5){
-                newIndex = 9;
+            if(answerIndex == 5){//5:What would you like to know about External Resources?
+                newIndex = 9;//9:What do you want to know about Data Protection?
                 console.log("default");
             }
             break;
