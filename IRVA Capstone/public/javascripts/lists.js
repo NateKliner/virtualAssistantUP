@@ -413,7 +413,7 @@ questions = [
     {
         str: 'Would you like to request data?',
         choices: ['I am a student','I am faculty/staff at University of Portland','I am a member of the general public', 'How soon can I hear back','I would like to email a data request','How do I contact IR with a specific request?'],
-        index: 33
+        index: 48
     }
     
 
@@ -519,7 +519,7 @@ function choice1Handler(answerIndex,previousQuestionIndex){
                 newIndex = 4;//4:What would you like to know about Data access?
             }
             if(answerIndex == 2){//What do you want to know about data Requests?
-                newIndex = 33;
+                newIndex = 48;//48:Would you like to request data?
             }
             
             break;
