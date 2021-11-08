@@ -531,41 +531,41 @@ function choice1Handler(answerIndex,previousQuestionIndex){
                 newIndex = 12;//12:Grants and Proposals
             }
             if(answerIndex == 2){//What do you want to know about data Requests?
-                newIndex = 47//I have a question about Data Requests
+                newIndex = 47;//I have a question about Data Requests
             }
             break;
         case 5:
             if(answerIndex == 0){
-                newIndex = 36//I have question about IPEDS
+                newIndex = 36;//I have question about IPEDS
             }
             if(answerIndex == 1){//How can I help you today?
-                newIndex = 30//30:college navigator
+                newIndex = 30;//30:college navigator
             }
             if(answerIndex == 2){//What do you want to know about data Requests?
-                newIndex = 29//29:benchmarking data
+                newIndex = 29;//29:benchmarking data
             }
             break;
         case 6:
             if(answerIndex == 0){
-                newIndex = 15//15:What is CDS
+                newIndex = 15;//15:What is CDS
             }
             if(answerIndex == 1){//How can I help you today?
-                newIndex = 41 //I have questions about student data need a student breakdown
+                newIndex = 41; //I have questions about student data need a student breakdown
             }//I think this one is fixed
             if(answerIndex == 2){//What do you want to know about data Requests?
-                newIndex =17 //17 or 16?
+                newIndex =17; //17 or 16?
                 //17:Student Requesting
             }
             if(answerIndex == 3){//3:You may want to contact IR.
-                newIndex = 16//16:Suggest Data
+                newIndex = 16;//16:Suggest Data
             }
             if(answerIndex == 4){//4:What would you like to know about Data access?
-                newIndex = 14//14:What are Tableu
+                newIndex = 14;//14:What are Tableu
             }
             break;
         case 7:
             if(answerIndex == 0){
-                newIndex = 33//What is data governance (still needs fixing)
+                newIndex = 33;//What is data governance (still needs fixing)
             }
             if(answerIndex == 1){//How can I help you today?
                 newIndex = 37;//37:data definitions
