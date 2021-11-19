@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $(".question").click(function(e) {
+    $(".question-IRVA").click(function(e) {
 
       var questionClicked = e.target.id;
       var prevQuestion = e.target.getAttribute('prevID');
@@ -10,14 +10,14 @@ $(document).ready(function() {
       console.log(questionIndices.choices[0]);
       console.log(questionIndices.index);
       // continue here
-      $("#botMessage").text(questionIndices.str)
+      $("#botMessage-IRVA").text(questionIndices.str)
       console.log(questionIndices.str);
 
       // var currentQuestion = document.createElement("button");
       // currentQuestion.setAttribute("id", questionIndices.index);
       // currentQuestion.setAttribute("class", "question");
 
-      $(".question").hide();
+      $(".question-IRVA").hide();
 
       for(let i = 0; i < questionIndices.choices.length; i++) {
         $("#"+i).show();
