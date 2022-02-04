@@ -141,7 +141,7 @@
   float: right;
 }
 
-p.speechBubble-IRVA {
+.speechBubble-IRVA {
   filter: drop-shadow(-1px -1px 2px rgba(black, .10)) drop-shadow(1px 2px 2px rgba(black, .15));
   padding: 2% 2%;
   position: inherit;
@@ -155,22 +155,7 @@ p.speechBubble-IRVA {
   font-family: "Baloo Bhaijaan 2", serif;
   }
 
-p.speechBubble-IRVA::before {
-  border-bottom-right-radius: 0.8rem 0.7rem;
-  border-left: 1rem solid #8CA8D8;
-  left:-0.35rem;
-  top: 6px;
-  transform: translate(0, -0.1rem);
-}
-
-p.speechBubble-IRVA::after {
-  background-color: #8CA8D8;
-  border-bottom-right-radius: 0.5rem;
-  left:20px;
-  transform: translate(-30px, -2px);
-}
-
-p.speechBubble-IRVA cite{
+.speechBubble-IRVA cite{
   position: absolute;
   bottom: -2rem;
   left: 4.5rem;
