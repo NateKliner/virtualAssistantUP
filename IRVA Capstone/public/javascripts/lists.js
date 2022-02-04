@@ -2,48 +2,67 @@ questions = [
     { //Main
         str: 'How can I help you today?',
         choices: ['I would like to know about Institutional Data.', 'I would like to know about Data Access', 'I would like to know about External Resources', 'I would like to know about IR', 'I would like to know about Data Governance', 'I would like to know about Data Protection'],
+        indices:[6,4,5,8,7,9] ,
         index: 1
+
+        /*
+        Handler Pseudo::
+        *previousquestion, answerindex
+        *new index  questions[previousquestion].indices[answerindex]
+        *return question[newindex-1]
+        
+        
+        
+        */ 
     },
     { //Data Requests
         str: 'What do you want to know about data Requests?',
         choices: ['I received data but it is innacurate or differs from data on the IR website', 'I want to know more about giving and recieving data requests', 'Can I request data?'],
+        indices:[3,4,48] ,
         index:2
     },
     { //I received data but it is innacurate or differs from data on the IR website 
         str: 'You may want to contact IR.',
         choices: ['How soon can I hear back?', 'How do i contact IR?'],
+        indices:[20,21],
         index:3
     },
     { //Data Access
         str: 'What would you like to know about Data access?',
         choices: ['I want to access Tableau Dashboards', 'I want to access grant proposals and reports','I have questions about Data Requests'],
+        indices:[13,12,47] ,
         index:4
     },
     { //External Resources
         str: 'What would you like to know about External Resources?',
         choices: ['I have questions about IPEDS', 'I have questions about college navigator.','I have questions about benchmarking data'],
+        indices:[36,30,29] ,
         index:5
     },
     {//Insatitutional Data
         str: 'What would you like to know about institutional Data?',
         choices: ['What is CDS and what data is in it?', 'I have questions about student data.','I have questions about Data Requests','Can I suggest data?', 'I have questions about Tableau Dashboards.'],
+        indices:[15,41,17,16,14] ,
         index:6
     },
     { //Data Governance
         str: 'What would you like about data governance?',
         choices: ['What is data governance?', 'What are data definitions?','I would like to know about data governance priorities.','How does IR make time for Data related tasks?' ],
+        indices:[33,37,38,39] ,
         index:7
     },
     {
         //About IR
         str: 'What do you want to know about IR?',
         choices: ['About', 'Contact'],
+        indices:[10,11] ,
         index:8
     },
     {
         //Data Protection
         str: 'What do you want to know about Data Protection?',
         choices: ['FERPA Questions', 'What counts as an educational record?', 'What counts as a  school official?', 'What counts as a legitimate educational interest?'],
+        indices:[32,24,25,26] ,
         index:9
     },
     {
@@ -57,12 +76,14 @@ questions = [
         /n Mission Statement: The Office of Institutional Research (IR) provides and coordinates information support for reporting, \
         decision-making, and planning activities to help fulfill the stated mission and goals of the University of Portland. ',
         choices:['Do you have any other questions?'],
+        indices:[1],
         index: 10
     },
     {
         //Contact IR
         str: 'Initial, brief phone calls are appreciated as this contact often helps clarify your request. 503.943.8000',
         choices:['Do you have any other questions?'],
+        indices:[1],
         index:11
     },
     {
@@ -71,6 +92,7 @@ questions = [
         The University Relations/Office of Development centralizes the grant process (grant submission and reporting) \
         for the entire University of Portland.',
         choices:['Do you have any other questions?'],
+        indices:[1],
         index:12
     },
     {
@@ -80,6 +102,7 @@ questions = [
         The software should be installed on your computer as part of regular system upgrades, however you can download the Reader via \
         the link on the IR site.  Then you will be able to click on the link for the desired internal dashboard to download and view it. ',
         choices:['Do you have any other questions?'],
+        indices:[1],
         index:13
     },
     {
@@ -90,6 +113,7 @@ questions = [
         The dashboards are powered by Tableau software, which means the data is available all the time, \
         updated regularly and directly from Banner, and is interactive.',
         choices:['Do you have any other questions?'],
+        indices:[1],
         index:14
     },
     {
@@ -110,6 +134,7 @@ questions = [
         Annual Expenses (cost of attendance)\n H) Financial Aid (aid awarded to enrolled undergraduates)\n I) Faculty and Class Size \
         (faculty headcount, student to faculty ratio, class size)\n J) Degrees Conferred (degrees awarded by major)',
         choices:['Do you have any other questions?'],
+        indices:[1],
         index:15
     },
     {
@@ -119,6 +144,7 @@ questions = [
         you'd like to see available on the IR Office website, rate the IR Office's service, \
         and provide general feedback.\nClick here to access the feedback form.",
         choices:['Do you have any other questions?'],
+        indices:[1],
         index:16
     },
     {
@@ -128,6 +154,7 @@ questions = [
         and staff on data that assists them with making sound policy decisions.  The personal interest and motivation of the IR office is \
         focused on improving the quality of life for all students.',
         choices:['Do you have any other questions?'],
+        indices:[1],
         index:17
     },
     {
@@ -142,6 +169,7 @@ questions = [
         attention.  Therefore, if the purpose of the request ties to these ongoing projects, it is welcome. For requests of individual level \
         data, please refer to FAQs on Data Protection.',
         choices:['Do you have any other questions?'],
+        indices:[1],
         index: 18
     },
     {
@@ -149,6 +177,7 @@ questions = [
         str: 'It entirely depends on the purpose of the request, including whether this is a new or recurring request.  \
         Please see other Data Access FAQs for further information.',
         choices:['Do you have any other questions?'],
+        indices:[1],
         index: 19
     },
     {
@@ -159,6 +188,7 @@ questions = [
         to provide as much notice as possible if you have a data request tied to a deadline.  Please make it clear in the data request \
         submission form what your timeline is and feel free to follow up with the IR office, as needed.',
         choices:['Do you have any other questions?'],
+        indices:[1],
         index:20
     },
     {
@@ -174,6 +204,7 @@ questions = [
         requesting the same data), it allows the IR office to best prioritize the request, and it makes clear to the IR office when you need \
         the data report.',
         choices:['Do you have any other questions?'],
+        indices:[1],
         index:21
     },
     {
@@ -184,6 +215,7 @@ questions = [
         will automatically email you a confirmation of your submission. The system also will allow you to save your request as a PDF document \
         that you should save for your records. Please do not email individual staff members with data requests.',
         choices:['Do you have any other questions?'],
+        indices:[1],
         index:22
     },
     {
@@ -192,6 +224,7 @@ questions = [
         str: 'Please feel free to suggest new terms you would like defined to support your data informed activities by reaching out to any \
         staff in the IR office. You can also submit anonymous suggestions and general feedback using the brief, online Feedback Form.',
         choices:['Do you have any other questions?'],
+        indices:[1],
         index:23
     },
     {
@@ -202,6 +235,7 @@ questions = [
         and anything with a student ID number.  The following are NOT educational records: personal notes (e.g. faculty member’s private notes), \
         law enforcement or campus security records, health records, or employment and payroll information.',
         choices:['Do you have any other questions?'],
+        indices:[1],
         index:24
     },
     {
@@ -210,6 +244,7 @@ questions = [
         on the Board of Regents, a student serving on an official committee (such as a grievance or disciplinary committee), or a volunteer \
         or outside contractor under certain circumstances.',
         choices:['Do you have any other questions?'],
+        indices:[1] ,
         index:25
     },
     {
@@ -217,6 +252,7 @@ questions = [
         str: 'A legitimate educational interest is defined as the need to review an education record in order to fulfill the school \
         official’s professional responsibilities for the school.',
         choices:['Do you have any other questions?'],
+        indices:[1],
         index:26
     },
     {
@@ -233,6 +269,7 @@ questions = [
         that accessing financial aid data (e.g. Pell eligibility) at the individual level is only possible under a restricted set of \
         circumstances.  The IR Office generally only provides data at the aggregated level.',
         choices:['Do you have any other questions?'],
+        indices:[1],
         index:27
     },
     {
@@ -242,6 +279,7 @@ questions = [
         accessing individual level data.  Failure to provide an identifier increases the complexity of the data request, imposes a significant \
         resource burden on the IR office to access and clean the data, and lengthens the turnaround to respond to a data request.',
         choices:['Do you have any other questions?'],
+        indices:[1],
         index:28
     },
     {
@@ -253,6 +291,7 @@ questions = [
         detailed benchmarking data. College Navigator provides the most commonly requested IPEDS data. IPEDS Data Feedback Reports provide \
         overview data with a pre-selected group of comparison schools.",
         choices:['Do you have any other questions?'],
+        indices:[1],
         index:29
     },
     {
@@ -263,7 +302,18 @@ questions = [
         FAQs for a list of what kind of data is available and how to use this data source for benchmarking. This website is available at this \
         link and is also listed in the IR website's External Resources.",
         choices:['Do you have any other questions?'],
+        indices:[1],
         index:30
+    },
+    {
+        str:['Do you have any other questions?'], 
+        index: 31       
+    },
+    {
+        str: 'What do you want to know about FERPA?',
+        choices: ['What is FERPA and how does it apply?', 'I would like to know more about FERPA standards and individual data.'],
+        indices:[27,28] ,
+        index:32
     },
     {
         //what is data governance and why is it important
@@ -282,6 +332,7 @@ questions = [
         encompasses both the top-down and grassroots strategies that establish effective university-wide data practices. The work is not simple, however \
         the increase in trust and consistency in the data pays dividends.",
         choices:['Do you have any other questions?'],
+        indices:[1],
         index:33
     },
     {
@@ -293,6 +344,7 @@ questions = [
         and staff, finances, institutional prices, and student financial aid. These data are made available to students and parents through the College Navigator \
         college search Web site and to researchers and others through the IPEDS Data Center. The wealth of data available via IPEDS makes it a valuable resource for internal and external stakeholders interested in better understanding and benchmarking postsecondary education institutions.",
         choices:['Do you have any other questions?'],
+        indices:[1],
         index: 34
     },
     {
@@ -304,6 +356,7 @@ questions = [
             service members, varsity athletic teams, accreditations, campus security, and loan default rates. This website is available at this link and is also listed \
             in the IR website's External Resources.",
         choices:['Do you have any other questions?'],
+        indices:[1],
         index: 35
     },
     {
@@ -313,6 +366,7 @@ questions = [
         document is publicly available.  UP’s DFRs are available in the DFR Archives at this link.  The DFR contains brief data overview of various topics such as enrollment, \
         degrees, financial aid, retention, graduation, finance, faculty/staff, and libraries.",
         choices:['Do you have any other questions?'],
+        indices:[1],
         index:36
     },//NOTE: IPEDS ON THE DECISION TREE NEEDS TO BE EXPANDED TO LIST OUT THESE QUESTIONS BECAUSE WE WON'T BE ABLE TO FIT THESE ANSWERS ALL ON ONE SCREEN EASILY
     {
@@ -320,7 +374,8 @@ questions = [
         //hyperlink inside
         str: "Data definitions can be found by navigating to the Supporting Documents for the Tableau Dashboards or by reading the Data Definitions page. The Institutional \
         Research Pilots portal space is the intended future space that will host fuller data dictionary documentation. The link will be available via the Data Governance Resources website.",
-        choices:['Do you have any other questions?'],  
+        choices:['Do you have any other questions?'], 
+        indices:[1], 
         index:37      
     },
     {
@@ -329,6 +384,7 @@ questions = [
         str: "The large group of stakeholders involved in data governance are constantly pursuing multiple, long-term and short-term projects to improve the data infrastructure \
         of the university.  Some of the latest priorities and projects are listed on the data governance site. ",
         choices:['Do you have any other questions?'],
+        indices:[1],
         index:38
     },//NEEDS TO BE ADDED TO DECISION TREE IN DATA GOVERNANCE
     {
@@ -339,6 +395,7 @@ questions = [
         have uninterrupted time and a supportive space to build more efficient data tools that directly assist the office and connect/brainstorm with other offices.  See the \
         Data Retreat site for more details! ",
         choices:['Do you have any other questions?'],
+        indices:[1],
         index:39
     },//NEEDS TO BE ADDED TO DECISION TREE IN DATA GOVERNANCE
     {
@@ -349,6 +406,7 @@ questions = [
         in research activities originating in the University. The IRB exercises oversight and review of research initiated by faculty, staff members, and students in connection \
         with their respective academic pursuits. More information is available at the IRB website.",
         choices:['Do you have any other questions?'],
+        indices:[1],
         index: 40
     },//NEEDS TO BE ADDED TO DECISION TREE IN DATA PROTECTION 
     {
@@ -357,6 +415,7 @@ questions = [
         str: "As the IR Office transitions from the old website to the upgraded website, some features are being maintained yet continually improved. The At a Glance page \
         compiles tables that used to reside on multiple pages. This includes undergraduate and graduate student enrollment and admissions data.",
         choices:['Do you have any other questions?'],
+        indices:[1],
         index:41
     },
     {
@@ -364,6 +423,7 @@ questions = [
         //hyperlinks inside
         str:"View the Enrollment Dashboard. The dashboard is powered by Tableau software, which means the data is available all the time, updated regularly and directly from Banner, and is interactive. View the Tableau dashboard site to get oriented and access supporting documentation. IPEDS can be used to find data on other schools. Please see the External Resources FAQ for information on IPEDS and College Navigator.",
         choices:['Do you have any other questions?'],
+        indices:[1],
         index:42
     },
     {
@@ -371,6 +431,7 @@ questions = [
         //hyperlinks inside
         str:"View the Enrollment Dashboard. The dashboard is powered by Tableau software, which means the data is available all the time, updated regularly and directly from Banner, and is interactive. The MajorsUnduplicated and MajorsDuplicated tabs correspond to headcounts of primary majors only and headcounts of multiple majors and degrees, respectively.  In other words, use the unduplicated headcount for reports that need to match the total enrollment for the university.  Use the duplicated headcount for departmental reports that need the total headcount of a given major. View the Tableau dashboard site to get oriented and access supporting documentation. IPEDS can be used to find data on other schools. Please see the External Resources FAQ for information on IPEDS and College Navigator.",
         choices:['Do you have any other questions?'],
+        indices:[1],
         index:43
     },
     {
@@ -378,6 +439,7 @@ questions = [
       //hyperlink inside
       str:"Please see the FAQ for What data can I find in the Common Data Set?", 
       choices:['Do you have any other questions?'], 
+      indices:[1],
       index: 44
     },
     {
@@ -385,6 +447,7 @@ questions = [
         //hyperlinks inside
         str:"View the Retention Dashboard. The dashboard is powered by Tableau software, which means the data is available all the time, updated regularly and directly from Banner, and is interactive. View the Tableau dashboard site to get oriented and access supporting documentation. IPEDS can be used to find data on other schools. Please see the External Resources FAQ for information on IPEDS and College Navigator.",
         choices:['Do you have any other questions?'], 
+        indices:[1],
         index: 45
     },
     {
@@ -392,6 +455,7 @@ questions = [
         //hyperlinks inside
         str:"View the Graduation Dashboard. The dashboard is powered by Tableau software, which means the data is available all the time, updated regularly and directly from Banner, and is interactive. View the Tableau dashboard site to get oriented and access supporting documentation. IPEDS can be used to find data on other schools. Please see the External Resources FAQ for information on IPEDS and College Navigator.",
         choices:['Do you have any other questions?'], 
+        indices:[1],
         index:46
     },
     {
@@ -399,20 +463,15 @@ questions = [
         //hyperlink inside
         str:"There are multiple ways to access data! The most immediate access for a wide variety of data is through the Office of Institutional Research's website. One of the best ways to navigate the site is to scan through the FAQs to find your question, which will direct you to a location with a relevant answer.  Most questions are covered by the link to Institutional Data.  Second, there are repositories of data that reside externally (e.g. IPEDS, US News & World Report rankings, etc). Please see the link for External Resources to access that information. Third, if the data you are seeking is at the individual student level, please see the FAQs regarding Protecting Data. Lastly, if your data request is not covered, Submit a Data Request.",
         choices:['Do you have any other questions?'],
+        indices:[1],
         index:47
+        
     },//NEEDS TO BE ADDED TO DATA REQUESTS TREE 
-    {
-        str:['Do you have any other questions?'], 
-        index: 31       
-    },
-    {
-        str: 'What do you want to know about FERPA?',
-        choices: ['What is FERPA and how does it apply?', 'I would like to know more about FERPA standards and individual data.'],
-        index:32
-    },
+    
     {
         str: 'Would you like to request data?',
         choices: ['I am a student','I am faculty/staff at University of Portland','I am a member of the general public', 'How soon can I hear back','I would like to email a data request','How do I contact IR with a specific request?'],
+        indices:[17,18,19,20,22,21] ,
         index: 48
     }
     
@@ -476,197 +535,3 @@ questions = [
 
 
 
-/**
- * 
- * @param {*} answerIndex 
- * @param {*} previousQuestionIndex 
- * @returns obj
- * 
- * Still need to fix noted and add more questions
- */
-function choice1Handler(answerIndex,previousQuestionIndex){
-    //send json (string,choices,index)
-    newIndex = 0
-    console.log("Parameters: " +answerIndex +" " + previousQuestionIndex);
-    switch(previousQuestionIndex){
-        case 0:
-            console.log("here first");
-            if(answerIndex == 0){
-                newIndex = 6;//6:What would you like to know about institutional Data?
-            }
-            if(answerIndex == 1){//How can I help you today?
-                newIndex = 4;//4:What would you like to know about Data access?
-            }
-            if(answerIndex == 2){//What do you want to know about data Requests?
-                newIndex = 5;//5:What would you like to know about External Resources?
-            }
-            if(answerIndex == 3){//3:You may want to contact IR.
-                newIndex = 8;//8:What do you want to know about IR?
-            }
-            if(answerIndex == 4){//4:What would you like to know about Data access?
-                newIndex = 7;//7:What would you like about data governance?
-            }
-            if(answerIndex == 5){//5:What would you like to know about External Resources?
-                newIndex = 9;//9:What do you want to know about Data Protection?
-                console.log("here");
-            }
-            break;
-        case 2:
-            if(answerIndex == 0){
-                newIndex = 3;//3:You may want to contact IR.
-            }
-            if(answerIndex == 1){//How can I help you today?
-                newIndex = 4;//4:What would you like to know about Data access?
-            }
-            if(answerIndex == 2){//What do you want to know about data Requests?
-                newIndex = 48;//48:Would you like to request data?
-            }
-            
-            break;
-        case 4:
-            if(anwserIndex == 0){
-                newIndex = 13;//13:Accessing Tableu
-            }
-            if(answerIndex == 1){//How can I help you today?
-                newIndex = 12;//12:Grants and Proposals
-            }
-            if(answerIndex == 2){//What do you want to know about data Requests?
-                newIndex = 47;//I have a question about Data Requests
-            }
-            break;
-        case 5:
-            if(answerIndex == 0){
-                newIndex = 36;//I have question about IPEDS
-            }
-            if(answerIndex == 1){//How can I help you today?
-                newIndex = 30;//30:college navigator
-            }
-            if(answerIndex == 2){//What do you want to know about data Requests?
-                newIndex = 29;//29:benchmarking data
-            }
-            break;
-        case 6:
-            if(answerIndex == 0){
-                newIndex = 15;//15:What is CDS
-            }
-            if(answerIndex == 1){//How can I help you today?
-                newIndex = 41; //I have questions about student data need a student breakdown
-            }//I think this one is fixed
-            if(answerIndex == 2){//What do you want to know about data Requests?
-                newIndex =17; //17 or 16?
-                //17:Student Requesting
-            }
-            if(answerIndex == 3){//3:You may want to contact IR.
-                newIndex = 16;//16:Suggest Data
-            }
-            if(answerIndex == 4){//4:What would you like to know about Data access?
-                newIndex = 14;//14:What are Tableu
-            }
-            break;
-        case 7:
-            if(answerIndex == 0){
-                newIndex = 33;//What is data governance (still needs fixing)
-            }
-            if(answerIndex == 1){//How can I help you today?
-                newIndex = 37;//37:data definitions
-            }
-            if(answerIndex == 2){//What do you want to know about data Requests?
-                newIndex = 38;//38:data governance priorities
-            }
-            if(answerIndex == 3){//3:You may want to contact IR.
-                newIndex = 39;//39:making time for data related tasks
-            }
-            
-            break;
-        case 8:
-            if(answerIndex == 0){
-                newIndex = 10;//10:About IR
-            }
-            if(answerIndex == 1){//How can I help you today?
-                newIndex = 11;//11:Contact IR
-            }
-            break;
-        case 9:
-            if(answerIndex == 0){
-                newIndex = 32;//32:What do you want to know about FERPA?
-            }
-            if(answerIndex == 1){//How can I help you today?
-                newIndex = 24;//24:what counts as educational record
-            }
-            if(answerIndex == 2){//What do you want to know about data Requests?
-                newIndex = 25;//25:what counts as school official
-            }
-            if(answerIndex == 3){//3:You may want to contact IR.
-                newIndex = 26;//26:what counts as legit educational interest
-            }
-            break;
-        case 25:
-            if(answerIndex == 0) {
-                newIndex = 1;//How can I help you today?
-            }
-            break;
-        case 32:
-            if(answerIndex == 0){
-                newIndex = 27;//27:what is FERPA and how does it apply
-            }
-            if(answerIndex == 1){//How can I help you today?
-                newIndex = 28;//28:what are FERPA's standards
-            }
-            break;
-        case 33:
-            if(answerIndex == 0){
-                newIndex = 17;//17:Student Requesting
-            }
-            if(answerIndex == 1){//How can I help you today?
-                newIndex = 18;//18:Professor Staff requesting
-            }
-            if(answerIndex == 2){//What do you want to know about data Requests?
-                newIndex = 19;//19:Outside UP requesting
-            }
-            if(answerIndex == 3){//3:You may want to contact IR.
-                newIndex = 20;//20:how soon can I hear back
-            }
-            if(answerIndex == 4){//4:What would you like to know about Data access?
-                newIndex = 22;//22:email data to IR
-            }
-            if(answerIndex == 5){//5:What would you like to know about External Resources?
-                newIndex = 21;//21:contacting IR with specific request
-            }
-            break;
-        default:
-            // if(answerIndex == 0){
-            //     newIndex =31;
-            // }
-            if(answerIndex == 0){
-                newIndex = 6;//6:What would you like to know about institutional Data?
-            }
-            if(answerIndex == 1){//How can I help you today?
-                newIndex = 4;//4:What would you like to know about Data access?
-            }
-            if(answerIndex == 2){//What do you want to know about data Requests?
-                newIndex = 5;//5:What would you like to know about External Resources?
-            }
-            if(answerIndex == 3){//3:You may want to contact IR.
-                newIndex = 8;//8:What do you want to know about IR?
-            }
-            if(answerIndex == 4){//4:What would you like to know about Data access?
-                newIndex = 7;//7:What would you like about data governance?
-            }
-            if(answerIndex == 5){//5:What would you like to know about External Resources?
-                newIndex = 9;//9:What do you want to know about Data Protection?
-                console.log("default");
-            }
-            break;
-    }
-    console.log("New:" + newIndex);
-    return questions[newIndex-1];
-    /* returnString = dictObject["str"];
-    returnChoices = dictObject["choices"];
-    returnIndex = dictObject["index"];
-    Obj = {
-        message : returnString,
-        choices : returnChoices,
-        index : returnIndex
-    }; */
-    
-}
