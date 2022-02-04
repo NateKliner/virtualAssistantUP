@@ -10,7 +10,7 @@ $(document).ready(function() {
       console.log(questionIndices.choices[0]);
       console.log(questionIndices.index);
       // continue here
-      $("#botMessage-IRVA").text(questionIndices.str)
+      $("#botMessage").text(questionIndices.str);
       console.log(questionIndices.str);
 
       // var currentQuestion = document.createElement("button");
