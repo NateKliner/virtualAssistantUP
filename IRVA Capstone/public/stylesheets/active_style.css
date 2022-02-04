@@ -1,9 +1,10 @@
 .body-IRVA{
   float: right;
   background-color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  /*font-family: Arial, Helvetica, sans-serif;*/
   font-size: small;
   padding-right: 2%;
+  font-family: "Baloo Bhaijaan 2", serif;
 }
 
 .h1-IRVA {
@@ -11,6 +12,7 @@
   padding-left: 100%;
   text-decoration: underline;
   color: white;
+  font-family: "Baloo Bhaijaan 2", serif;
 }
 
 .img-IRVA {
@@ -28,12 +30,14 @@
 .p-IRVA{
   text-align: center;
   height: fit-content;
+  font-family: "Baloo Bhaijaan 2", serif;
 }
 
 .input-IRVA{
   align-self: center;
   width: 70%;
   height: fit-content;
+  font-family: "Baloo Bhaijaan 2", serif;
 }
 
 .outerChatBorder-IRVA {
@@ -69,6 +73,7 @@
   height: 340px;
   overflow-y:auto;
   overflow-x:hidden;
+  font-family: "Baloo Bhaijaan 2", serif;
 }
 
 #bottomTextBox-IRVA {
@@ -78,16 +83,24 @@
   display: flex;
   justify-content: center;
   height: 10%;
+  font-family: "Baloo Bhaijaan 2", serif;
 }
 
-#questionButtons{
+#questionButtons .question-IRVA{
   float: right;
-  padding-right: 7%;
-  padding-bottom: 10%;
+  padding-right: 20%;
+ 
+  font-family: "Baloo Bhaijaan 2", serif;
+  background-color: #9147e6;
+}
+#questionButtons .question-IRVA:hover{
+  font-family: "Baloo Bhaijaan 2", serif;
+  background-color: #b947e6;
 }
 
 .question-IRVA {
   float: right;
+  
 }
 
 .speechBubble-IRVA {
@@ -100,6 +113,7 @@ font-weight: 200;
 background: #8CA8D8;
 color: white;
 width: 80%;
+font-family: "Baloo Bhaijaan 2", serif;
 }
 
 .speechBubble-IRVA cite{
@@ -111,6 +125,7 @@ font-style: normal;
 font-weight: 300;
 letter-spacing: 0.5px;
 color: white;
+font-family: "Baloo Bhaijaan 2", serif;
 }
 
 .bottomButton-IRVA {
