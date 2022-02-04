@@ -1,7 +1,6 @@
 .body-IRVA{
   float: right;
   background-color: white;
-  /*font-family: Arial, Helvetica, sans-serif;*/
   font-size: small;
   padding-right: 2%;
   font-family: "Baloo Bhaijaan 2", serif;
@@ -9,19 +8,20 @@
 
 .h1-IRVA {
   text-align: center;
-  padding-left: 100%;
+  padding-left: 125%;
   text-decoration: underline;
   color: white;
   font-family: "Baloo Bhaijaan 2", serif;
 }
 
 .img-IRVA {
-  height: 50%;
+  width:50px;
+  height: auto;
   display: block;
   left: auto;
   right: auto;
-  margin-top: 15%;
-  margin-left: 25%;
+  margin-top: 25%;
+  margin-left: 40%;
   border-radius: 100%;
   background-color: white;
   border: 2px black;
@@ -36,7 +36,7 @@
 .input-IRVA{
   align-self: center;
   width: 70%;
-  height: fit-content;
+  height:fit-content;
   font-family: "Baloo Bhaijaan 2", serif;
 }
 
@@ -44,10 +44,11 @@
   border: 3px solid rgb(184, 184, 184);
   border-style: groove groove groove groove;
   width: 400px;
-  height: 500px;
+  height: 475px;
   border-radius: 6px;
   background-color: white;
   overflow: hidden;
+  font-family: "Baloo Bhaijaan 2", serif;
 }
 
 #image-IRVA {
@@ -73,7 +74,40 @@
   height: 340px;
   overflow-y:auto;
   overflow-x:hidden;
-  font-family: "Baloo Bhaijaan 2", serif;
+  text-align: center;
+  padding-top: 5%;
+}
+
+#innerChat-IRVA::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+  background-color: #F5F5F5;
+  padding: 10px;
+  background:transparent;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#innerChat-IRVA::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 10px;
+}
+
+#innerChat-IRVA::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 10px;
+}
+
+#innerChat-IRVA::-webkit-scrollbar {
+  width: 12px;
+	background-color: #F5F5F5;
+}
+
+#innerChat-IRVA::-webkit-scrollbar-thumb {
+  background-color: purple;
+  border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  height: 50%;
 }
 
 #bottomTextBox-IRVA {
@@ -86,13 +120,18 @@
   font-family: "Baloo Bhaijaan 2", serif;
 }
 
+
+
 #questionButtons .question-IRVA{
   float: right;
-  padding-right: 20%;
- 
+  
   font-family: "Baloo Bhaijaan 2", serif;
   background-color: #9147e6;
+  margin-right: 5%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
 }
+
 #questionButtons .question-IRVA:hover{
   font-family: "Baloo Bhaijaan 2", serif;
   background-color: #b947e6;
@@ -100,33 +139,48 @@
 
 .question-IRVA {
   float: right;
-  
 }
 
-.speechBubble-IRVA {
-filter: drop-shadow(-1px -1px 2px rgba(black, .10)) drop-shadow(1px 2px 2px rgba(black, .15));
-padding: 2% 2%;
-position: inherit;
-font-family: 'Source Sans Pro', sans-serif;
-font-size: 15px;
-font-weight: 200;
-background: #8CA8D8;
-color: white;
-width: 80%;
-font-family: "Baloo Bhaijaan 2", serif;
+p.speechBubble-IRVA {
+  filter: drop-shadow(-1px -1px 2px rgba(black, .10)) drop-shadow(1px 2px 2px rgba(black, .15));
+  padding: 2% 2%;
+  position: inherit;
+  font-size: 15px;
+  font-weight: 200;
+  background: #8CA8D8;
+  margin-left: 11%;
+  color: white;
+  width: 80%;
+  align-items: flex-start;
+  font-family: "Baloo Bhaijaan 2", serif;
+  }
+
+p.speechBubble-IRVA::before {
+  border-bottom-right-radius: 0.8rem 0.7rem;
+  border-left: 1rem solid #8CA8D8;
+  left:-0.35rem;
+  top: 6px;
+  transform: translate(0, -0.1rem);
 }
 
-.speechBubble-IRVA cite{
-position: absolute;
-bottom: -2rem;
-left: 4.5rem;
-font-size: 1rem;
-font-style: normal;
-font-weight: 300;
-letter-spacing: 0.5px;
-color: white;
-font-family: "Baloo Bhaijaan 2", serif;
+p.speechBubble-IRVA::after {
+  background-color: #8CA8D8;
+  border-bottom-right-radius: 0.5rem;
+  left:20px;
+  transform: translate(-30px, -2px);
 }
+
+p.speechBubble-IRVA cite{
+  position: absolute;
+  bottom: -2rem;
+  left: 4.5rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: white;
+  font-family: "Baloo Bhaijaan 2", serif;
+  }
 
 .bottomButton-IRVA {
   float: right;
@@ -143,9 +197,9 @@ font-family: "Baloo Bhaijaan 2", serif;
 #xBox-IRVA{
   position:inherit;
   top: 40%;
-  left:30%;
+  left: 45%;
   height: 75%;
-  width: 75%;
+  width: auto;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -153,4 +207,8 @@ font-family: "Baloo Bhaijaan 2", serif;
 
 #submitButton-IRVA{
   width: fit-content;
+}
+
+#dateTime-IRVA {
+  text-align: center;
 }
