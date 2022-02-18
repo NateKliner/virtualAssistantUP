@@ -7,16 +7,37 @@
 <title>IRVA: ChatBot</title>
 </head>
 <link rel="stylesheet" href="../public/stylesheets/active_style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-    function myFunctionIRVA1(){
-   // similar behavior as an HTTP redirect
-   window.location.replace("idle_GUI.html");
-   //or
-   // similar behavior as clicking on a link
-   window.location.href =("idle_GUI.html");
-}; 
+    function myFunctionIRVA1(){//ACTIVE TO IDLE
+        
+        [].forEach.call(document.querySelectorAll('.body-IRVA'), function (el) {
+            el.style.visibility = 'hidden';
+          });
+          [].forEach.call(document.querySelectorAll('.bottomButton-IRVA'), function (el) {
+            el.style.visibility = 'hidden';
+          });
+          [].forEach.call(document.querySelectorAll('.bottomright'), function (el) {
+            el.style.visibility = 'visible';
+          });
+        console.log("CLOSE");
+    }; 
 </script>
+<script>
+    function myFunction(){//ACTIVE TO IDLE
+        [].forEach.call(document.querySelectorAll('.body-IRVA'), function (el) {
+            el.style.visibility = 'visible';
+          });
+          [].forEach.call(document.querySelectorAll('.bottomButton-IRVA'), function (el) {
+            el.style.visibility = 'visible';
+          });
+          [].forEach.call(document.querySelectorAll('.bottomright'), function (el) {
+            el.style.visibility = 'hidden';
+          });
+        console.log("OPEN");
+    }; 
+</script>
+
 <script src="../public/javascripts/lists.js"></script>
 <script src="../public/javascripts/question1_Handler.js"></script>
 
@@ -62,5 +83,18 @@
     document.getElementById('dateTime-IRVA').innerHTML = dt.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
 </script>
 
-</body>
+    <div class =  "bottomright" style="visibility: hidden">
+        <style>
+            .bottomright {
+                position: absolute;
+                bottom: 8px;
+                 right: 16px;
+                font-size: 18px;
+            }
+        </style>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Notifications_alert_badge_-_1_alert.svg/1024px-Notifications_alert_badge_-_1_alert.svg.png" alt="Notification" style="width:30px;height:30px;">
+        <button onclick="myFunction()"><img src="https://cdn.discordapp.com/attachments/879980090979659860/893281907872268318/Ira_chatbot.png"></button>
+        
+   </div> 
+</body> 
 </html>
