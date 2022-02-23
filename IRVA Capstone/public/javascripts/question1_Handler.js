@@ -26,5 +26,7 @@ $(document).ready(function() {
         console.log(questionIndices.choices[i]);
         $("#"+i).attr("prevID", questionIndices.index);
       }
+      var dt = new Date();
+      $("#dateTime-IRVA").html(dt.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}));
     })
   });
