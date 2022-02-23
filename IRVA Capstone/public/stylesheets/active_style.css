@@ -76,6 +76,7 @@
   overflow-x:hidden;
   text-align: center;
   padding-top: 5%;
+  background-color: white;
 }
 
 #innerChat-IRVA::-webkit-scrollbar-track {
@@ -120,16 +121,26 @@
   font-family: "Baloo Bhaijaan 2", serif;
 }
 
+#questionButtons{
+  display: flex;
+  margin-right: 1%;
+  margin-bottom: 5%;
+}
 
+#questionButtonsLeft{
+  width: 80%;
+}
 
 #questionButtons .question-IRVA{
   float: right;
   
   font-family: "Baloo Bhaijaan 2", serif;
   background-color: #9147e6;
+  color:white;
   margin-right: 5%;
   margin-top: 0.5%;
   margin-bottom: 0.5%;
+  
 }
 
 #questionButtons .question-IRVA:hover{
@@ -143,28 +154,31 @@
 
 .speechBubble-IRVA {
   filter: drop-shadow(-1px -1px 2px rgba(black, .10)) drop-shadow(1px 2px 2px rgba(black, .15));
+  margin-left: 10%;
+  margin-bottom: 5%;
+  margin-top: 5%;
   padding: 2% 2%;
-  position: inherit;
+  position: relative;
   font-size: 15px;
   font-weight: 200;
   background: #8CA8D8;
-  margin-left: 11%;
   color: white;
   width: 80%;
   align-items: flex-start;
   font-family: "Baloo Bhaijaan 2", serif;
   }
 
-.speechBubble-IRVA cite{
+.speechBubble-IRVA:before{
+  content: "";
+  width: 0px;
+  height: 0px;
   position: absolute;
-  bottom: -2rem;
-  left: 4.5rem;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 300;
-  letter-spacing: 0.5px;
-  color: white;
-  font-family: "Baloo Bhaijaan 2", serif;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #8CA8D8;
+  border-top: 10px solid #8CA8D8;
+  border-bottom: 10px solid transparent;
+  left: -19px;
+  top: 6px;
   }
 
 .bottomButton-IRVA {
