@@ -10,18 +10,18 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     function myFunctionIRVA1(){//ACTIVE TO IDLE
-        
-        [].forEach.call(document.querySelectorAll('.body-IRVA'), function (el) {
+
+    [].forEach.call(document.querySelectorAll('.body-IRVA'), function (el) {
+        el.style.visibility = 'hidden';
+        });
+        [].forEach.call(document.querySelectorAll('.bottomButton-IRVA'), function (el) {
             el.style.visibility = 'hidden';
-          });
-          [].forEach.call(document.querySelectorAll('.bottomButton-IRVA'), function (el) {
-            el.style.visibility = 'hidden';
-          });
-          [].forEach.call(document.querySelectorAll('.bottomright'), function (el) {
+        });
+        [].forEach.call(document.querySelectorAll('.bottomright'), function (el) {
             el.style.visibility = 'visible';
-          });
+        });
         console.log("CLOSE");
-    }; 
+        }; 
 </script>
 <script>
     function myFunctionIRVA2(){//ACTIVE TO IDLE
@@ -37,9 +37,9 @@
         console.log("OPEN");
     }; 
 </script>
-
 <script src="../public/javascripts/lists.js"></script>
 <script src="../public/javascripts/question1_Handler.js"></script>
+<script src="../public/javascripts/input_Handler.js"></script>
 
 
 <body class="body-IRVA">
@@ -57,20 +57,23 @@
     <div div="innerChat-IRVA" id="innerChat-IRVA">
         <span id="dateTime-IRVA">
         </span>
-        <blockquote class="speechBubble-IRVA" id="botMessage">
+        <div class="speechBubble-IRVA" id="botMessage">
             <p class="p-IRVA" id="botMessage-IRVA"> How can I help you today?</p>
-        </blockquote>
+        </div>
         <div id="questionButtons">
-            <button class= "question-IRVA" prevID="0" id="0" >I would like to know about Institutional Data.</button>
-            <button class= "question-IRVA" prevID="0" id="1" >I would like to know about Data Access.</button>
-            <button class= "question-IRVA" prevID="0" id="2" >I would like to know about External Resources.</button>
-            <button class= "question-IRVA" prevID="0" id="3" >I would like to know about IR.</button>
-            <button class= "question-IRVA" prevID="0" id="4" >I would like to know about Data Protection.</button>
-            <button class= "question-IRVA" prevID="0" id="5" >I would like to know about Data Access.</button>
+            <div id="questionButtonsLeft"></div>
+            <div id="questionButtonsRight">
+                <button class= "question-IRVA" prevID="0" id="0" >I would like to know about Institutional Data.</button>
+                <button class= "question-IRVA" prevID="0" id="1" >I would like to know about Data Access.</button>
+                <button class= "question-IRVA" prevID="0" id="2" >I would like to know about External Resources.</button>
+                <button class= "question-IRVA" prevID="0" id="3" >I would like to know about IR.</button>
+                <button class= "question-IRVA" prevID="0" id="4" >I would like to know about Data Governance.</button>
+                <button class= "question-IRVA" prevID="0" id="5" >I would like to know about Data Protection.</button>
+            </div>
         </div>
     </div>
     <div div="bottomTextBox-IRVA" id="bottomTextBox-IRVA">
-        <input type="text" placeholder="Send Message to IRVA here..." class="input-IRVA" id="input-IRVA" name="input"><br><br>
+        <input type="text" autocomplete="off" placeholder="Send Message to IRVA here..." class="input-IRVA" id="input-IRVA" name="input"><br><br>
         <input type="submit" id="submitButton-IRVA" class="input-IRVA" value="Send">
     </div>
 </div>
@@ -83,18 +86,19 @@
     document.getElementById('dateTime-IRVA').innerHTML = dt.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
 </script>
 
-    <div class =  "bottomright" style="visibility: hidden">
-        <style>
-            .bottomright {
-                position: absolute;
-                bottom: 8px;
-                 right: 16px;
-                font-size: 18px;
-            }
-        </style>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Notifications_alert_badge_-_1_alert.svg/1024px-Notifications_alert_badge_-_1_alert.svg.png" alt="Notification" style="width:30px;height:30px;">
-        <button onclick="myFunctionIRVA2()"><img src="https://cdn.discordapp.com/attachments/879980090979659860/893281907872268318/Ira_chatbot.png"></button>
-        
-   </div> 
-</body> 
+<div class =  "bottomright" style="visibility: hidden">
+    <style>
+        .bottomright {
+            position: absolute;
+            bottom: 8px;
+             right: 16px;
+            font-size: 18px;
+        }
+    </style>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Notifications_alert_badge_-_1_alert.svg/1024px-Notifications_alert_badge_-_1_alert.svg.png" alt="Notification" style="width:30px;height:30px;">
+    <button onclick="myFunctionIRVA2()"><img src="https://cdn.discordapp.com/attachments/879980090979659860/893281907872268318/Ira_chatbot.png"></button>
+
+</div> 
+
+</body>
 </html>
