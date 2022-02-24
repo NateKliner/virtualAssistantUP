@@ -10,6 +10,16 @@ $(document).ready(function(){
             textToSend = undefined;
         }
         console.log(textToSend);
+        var answer = contextHandler(textToSend);
+
+        $("#botMessage").text(answer.str);
+        $(".question-IRVA").hide();
+
+        for(let i = 0; i < answer.choices.length; i++) {
+            $("#"+i).show();
+            $("#"+i).html(answer.choices[i]);
+            $("#"+i).attr("prevID", answer.index);
+          }
         var dt = new Date();
         $("#dateTime-IRVA").html(dt.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}));
         $("#input-IRVA").val("");
