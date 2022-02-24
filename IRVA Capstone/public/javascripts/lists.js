@@ -73,13 +73,13 @@ questions = [
     },
     { //Data Requests
         str: 'What do you want to know about data Requests?',
-        choices: ['I received data but it is innacurate or differs from data on the IR website', 'I want to know more about giving and recieving data requests', 'Can I request data?'],
+        choices: ['I received data but it is innacurate <br/> or differs from data on the IR website', 'I want to know more about giving and <br/> recieving data requests', 'Can I request data?'],
         indices:[2,3,47] ,
         index:1
     },
     { //I received data but it is innacurate or differs from data on the IR website 
         str: 'You may want to contact IR.',
-        choices: ['How soon can I hear back?', 'How do i contact IR?'],
+        choices: ['How soon can I hear back?', 'How do I contact IR?'],
         indices:[19,20],
         index:2
     },
@@ -92,7 +92,7 @@ questions = [
     { //External Resources
         str: 'What would you like to know about External Resources?',
         choices: ['I have questions about IPEDS', 'I have questions about college navigator.','I have questions about benchmarking data'],
-        indices:[33,34,28] ,
+        indices:[33,34,28],
         index:4
     },
     {//Insatitutional Data
@@ -206,7 +206,7 @@ questions = [
     {
         //I am a student can I request data
         str: 'Unfortunately, it is not the role of the IR office to directly assist students with research and/or class projects. \
-        Rather the IR office’s priorities are focused on keeping UP in compliance with external reporting and informing UP faculty \
+        Rather the IR offices priorities are focused on keeping UP in compliance with external reporting and informing UP faculty \
         and staff on data that assists them with making sound policy decisions.  The personal interest and motivation of the IR office is \
         focused on improving the quality of life for all students.',
         choices:['Do you have any other questions?'],
@@ -527,16 +527,46 @@ questions = [
     {
         str: 'Would you like to request data?',
         choices: ['I am a student','I am faculty/staff at University of Portland','I am a member of the general public', 'How soon can I hear back','I would like to email a data request','How do I contact IR with a specific request?'],
-        indices:[16,17,18,19,21,20] ,
+        indices:[16,17,18,19,21,20],
         index: 47
     }
     
 
 ]
+ // dictionary of keywords to use for context-based model
+var keyWords = ["when", "what", "how", "about", "counts", "cds", "data", "faculty", "staff", "student", "general", "public", "contact", "request", "suggest", 
+"access", "report", "ir",  "ferpa", "ipeds", "tableau", "dashboard", "grant", "proposals", "email", "navigator", "benchmarking", "governance", 
+"priorities", "definitions", "time", "individual", "standard", "educational", "records", "school", "official", "interests", "legitimate", "soon"];
 
-
-
-
+// this map is set in the order of the answers provided in meeting notes
+const map = new Map();
+map.set('0100011000000000000000000000000000000000', 14);
+map.set('0001001001000000000000000000000000000000', 40);
+map.set('0001001000000100000000000000000000000000', 16);
+map.set('0000001000000010000000000000000000000000', 15);
+map.set('0001000000000000000001000000000000000000', 13);
+map.set('0000000000000001000001000000000000000000', 13);
+map.set('0000000000000001100000110000000000000000', 12);
+map.set('0000001001000100000000000000000000000000', 16);
+map.set('0000001110000100000000000000000000000000', 17);
+map.set('0001001000110100000000000000000000000000', 18);
+map.set('0010000000000000000000000000000000000001', 19);
+map.set('0000001000000100000000001000000000000000', 21);
+map.set('0010000000001100010000000000000000000000', 20);
+map.set('0001000000000000000100000000000000000000', 33);
+map.set('0001000000000000000000000100000000000000', 34);
+map.set('0001001000000000000000000010000000000000', 28);
+map.set('0001000000001000010000000000000000000000', 9);
+map.set('0001000000000000010000000000000000000000', 10);
+map.set('0100001000000000000000000001000000000000', 32);
+map.set('0100001000000000000000000000010000000000', 36);
+map.set('0001001000000000000000000001100000000000', 37);
+map.set('0010001000000000010000000000001000000000', 38);
+map.set('0110000000000000001000000000000000000000', 26);
+map.set('0001001000000000001000000000000110000000', 27);
+map.set('0100100000000000000000000000000001000000', 23);
+map.set('0100100000000000000000000000000000011000', 24);
+map.set('0100100000000000000000000000000001000010', 25);
 
 function choice1Handler(answerIndex,previousQuestionIndex){
 
@@ -545,13 +575,41 @@ function choice1Handler(answerIndex,previousQuestionIndex){
     console.log("Parameters: " +answerIndex +" " + previousQuestionIndex);
     
     question = questions[previousQuestionIndex];
-    newIndex = question["indices"][answerIndex]
+    newIndex = question["indices"][answerIndex];
     
     if (newIndex <= 0){
-        return questions[1];
+        return questions[0];
     }
-    
     else{
         return questions[newIndex];
+    }
+}
+
+
+function contextHandler(str) {
+    var string = str.toLowerCase();
+    const question = string.split(" ");
+    var bitwise = '';
+    var bit = 0;
+    for(let i = 0; i < keyWords.length; i++) {
+        for(let j = 0; j < question.length; j++) {
+            if(question[j].startsWith(keyWords[i])) {
+                bit = 1;
+            }
+        }
+
+        bitwise = bitwise.concat(bit);
+        bit = 0;
+    }
+    console.log(bitwise);
+
+    if(map.has(bitwise)) {
+        let n = map.get(bitwise);
+        newAnswer = questions[n];
+        let newIndex = newAnswer["index"];
+        return questions[newIndex];
+    }
+    else {
+        return questions[0];
     }
 }
