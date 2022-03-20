@@ -529,6 +529,13 @@ questions = [
         choices: ['I am a student','I am faculty/staff at University of Portland','I am a member of the general public', 'How soon can I hear back','I would like to email a data request','How do I contact IR with a specific request?'],
         indices:[16,17,18,19,21,20],
         index: 47
+    },
+
+    {
+        str: 'Sorry, we do not have the answer for this at the moment.',
+        choices: ['Do you have any other questions?'],
+        indices:[0],
+        index: 48
     }
     
 
@@ -541,38 +548,68 @@ var keyWords = ["when", "what", "how", "about", "counts", "cds", "data", "facult
 // this map is set in the order of the answers provided in meeting notes
 const map = new Map();
 map.set('0100011000000000000000000000000000000000', 14);
+map.set('0100010000000000000000000000000000000000', 14);
 map.set('0001001001000000000000000000000000000000', 40);
-map.set('0001001000000100000000000000000000000000', 16);
 map.set('0000001000000010000000000000000000000000', 15);
 map.set('0001000000000000000001000000000000000000', 13);
 map.set('0000000000000001000001000000000000000000', 13);
+map.set('0000000000000001000011000000000000000000', 13);
 map.set('0000000000000001100000110000000000000000', 12);
 map.set('0000001001000100000000000000000000000000', 16);
+map.set('0001001001000100000000000000000000000000', 16);
 map.set('0000001110000100000000000000000000000000', 17);
 map.set('0001001000110100000000000000000000000000', 18);
 map.set('0010000000000000000000000000000000000001', 19);
+map.set('0011001000000100000000000000000000000001', 19);
 map.set('0000001000000100000000001000000000000000', 21);
 map.set('0010000000001100010000000000000000000000', 20);
 map.set('0001000000000000000100000000000000000000', 33);
 map.set('0001000000000000000000000100000000000000', 34);
 map.set('0001001000000000000000000010000000000000', 28);
-map.set('0001000000001000010000000000000000000000', 9);
-map.set('0001000000000000010000000000000000000000', 10);
+map.set('0001000000001000010000000000000000000000', 10);
+map.set('0100000000000000010000000000000000000000', 9);
+map.set('0001000000000000010000000000000000000000', 9);
+map.set('0010000000001000010000000000000000000000', 9);
+map.set('0000000000001000010000000000000000000000', 9);
 map.set('0100001000000000000000000001000000000000', 32);
 map.set('0100001000000000000000000000010000000000', 36);
 map.set('0001001000000000000000000001100000000000', 37);
 map.set('0010001000000000010000000000001000000000', 38);
 map.set('0110000000000000001000000000000000000000', 26);
+map.set('0100000000000000001000000000000000000000', 26);
 map.set('0001001000000000001000000000000110000000', 27);
 map.set('0100100000000000000000000000000001000000', 23);
 map.set('0100100000000000000000000000000000011000', 24);
 map.set('0100100000000000000000000000000001000010', 25);
 
-function choice1Handler(answerIndex,previousQuestionIndex){
+function makeCookie() {
+    document.cookie = "cookieIndex=0";
+}
 
-    newIndex = 0
-    
-    console.log("Parameters: " +answerIndex +" " + previousQuestionIndex);
+function getInfoCookie() {
+    let cookieValues = document.cookie.split('=');
+    return cookieValues[1];
+}
+
+function checkifCookie(newIndex) {
+    if(document.cookie == ""){
+        document.cookie = "cookieIndex=0";
+        return false;
+    }
+    else{
+        document.cookie = "cookieIndex="+newIndex;
+        return true;
+    }
+}
+
+function choice1Handler(answerIndex,previousQuestionIndex) {
+
+    if(checkifCookie(0) == false){
+        newIndex = 0;
+    }
+    else {
+        newIndex = getInfoCookie();
+    }
     
     question = questions[previousQuestionIndex];
     newIndex = question["indices"][answerIndex];
@@ -581,6 +618,7 @@ function choice1Handler(answerIndex,previousQuestionIndex){
         return questions[0];
     }
     else{
+        checkifCookie(newIndex);
         return questions[newIndex];
     }
 }
@@ -607,9 +645,11 @@ function contextHandler(str) {
         let n = map.get(bitwise);
         newAnswer = questions[n];
         let newIndex = newAnswer["index"];
+        checkifCookie(newIndex);
         return questions[newIndex];
     }
     else {
-        return questions[0];
+        checkifCookie(48);
+        return questions[48];
     }
 }
