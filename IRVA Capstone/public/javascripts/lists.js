@@ -67,8 +67,6 @@ questions = [
         *new index  questions[previousquestion].indices[answerindex]
         *return question[newindex-1]
         
-        
-        
         */ 
     },
     { //Data Requests
@@ -91,7 +89,7 @@ questions = [
     },
     { //External Resources
         str: 'What would you like to know about External Resources?',
-        choices: ['I have questions about IPEDS', 'I have questions about college navigator.','I have questions about benchmarking data'],
+        choices: ['I have questions about IPEDS', 'I have questions about college navigators.','I have questions about benchmarking data'],
         indices:[33,34,28],
         index:4
     },
@@ -102,7 +100,7 @@ questions = [
         index:5
     },
     { //Data Governance
-        str: 'What would you like about data governance?',
+        str: 'What would you like to know about data governance?',
         choices: ['What is data governance?', 'What are data definitions?','I would like to know about data governance priorities.','How does IR make time for Data related tasks?' ],
         indices:[32,36,37,38] ,
         index:6
@@ -117,7 +115,7 @@ questions = [
     {
         //Data Protection
         str: 'What do you want to know about Data Protection?',
-        choices: ['FERPA Questions', 'What counts as an educational record?', 'What counts as a  school official?', 'What counts as a legitimate educational interest?'],
+        choices: ['FERPA Questions', 'What counts as an educational record?', 'What counts as a school official?', 'What counts as a legitimate educational interest?'],
         indices:[31,23,24,25] ,
         index:8
     },
@@ -131,14 +129,14 @@ questions = [
         4) serve as stewards of data/information, 5) educate information producers, users, and consumers. \
         /n Mission Statement: The Office of Institutional Research (IR) provides and coordinates information support for reporting, \
         decision-making, and planning activities to help fulfill the stated mission and goals of the University of Portland. ',
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index: 9
     },
     {
         //Contact IR
         str: 'Initial, brief phone calls are appreciated as this contact often helps clarify your request. 503.943.8000',
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index:10
     },
@@ -147,7 +145,7 @@ questions = [
         str: 'Please refer to the most recent version of the Faculty Handbook for the University Relations Institutional Policy for All University Grants. \
         The University Relations/Office of Development centralizes the grant process (grant submission and reporting) \
         for the entire University of Portland.',
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index:11
     },
@@ -157,7 +155,7 @@ questions = [
         Click on link for Internal Data and Dashboards.  In order to view any internal dashboards, you need Tableau Reader software.\
         The software should be installed on your computer as part of regular system upgrades, however you can download the Reader via \
         the link on the IR site.  Then you will be able to click on the link for the desired internal dashboard to download and view it. ',
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index:12
     },
@@ -168,7 +166,7 @@ questions = [
         View the Tableau dashboard site to get oriented and access supporting documentation. \
         The dashboards are powered by Tableau software, which means the data is available all the time, \
         updated regularly and directly from Banner, and is interactive.',
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index:13
     },
@@ -189,7 +187,7 @@ questions = [
         admissions requirements)\n E) Academic Offerings and Policies\n F) Student Life (out-of-state residents, activities offered)\n G) \
         Annual Expenses (cost of attendance)\n H) Financial Aid (aid awarded to enrolled undergraduates)\n I) Faculty and Class Size \
         (faculty headcount, student to faculty ratio, class size)\n J) Degrees Conferred (degrees awarded by major)',
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index:14
     },
@@ -199,7 +197,7 @@ questions = [
         Please take 5 minutes to complete an anonymous feedback form.  This form can be used to suggest additional content \
         you'd like to see available on the IR Office website, rate the IR Office's service, \
         and provide general feedback.\nClick here to access the feedback form.",
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index:15
     },
@@ -209,7 +207,7 @@ questions = [
         Rather the IR offices priorities are focused on keeping UP in compliance with external reporting and informing UP faculty \
         and staff on data that assists them with making sound policy decisions.  The personal interest and motivation of the IR office is \
         focused on improving the quality of life for all students.',
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index:16
     },
@@ -224,7 +222,7 @@ questions = [
         Requests from media reporters, educational institution ranking agencies, and data sharing consortiums also typically require diligent \
         attention.  Therefore, if the purpose of the request ties to these ongoing projects, it is welcome. For requests of individual level \
         data, please refer to FAQs on Data Protection.',
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index: 17
     },
@@ -232,7 +230,7 @@ questions = [
         //I am outside of the UP community can I request data
         str: 'It entirely depends on the purpose of the request, including whether this is a new or recurring request.  \
         Please see other Data Access FAQs for further information.',
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index: 18
     },
@@ -243,7 +241,7 @@ questions = [
         that requests vary widely in their complexity.  The office endeavors to provide data as quickly as possible, however it is best \
         to provide as much notice as possible if you have a data request tied to a deadline.  Please make it clear in the data request \
         submission form what your timeline is and feel free to follow up with the IR office, as needed.',
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index:19
     },
@@ -259,7 +257,7 @@ questions = [
         support the request, it ensures the IR office is not assisting with redundant work (e.g. two members of the same committee inadvertently \
         requesting the same data), it allows the IR office to best prioritize the request, and it makes clear to the IR office when you need \
         the data report.',
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index:20
     },
@@ -270,7 +268,7 @@ questions = [
         get overlooked in an email inbox. The link already submits your data request as an email and if submitted successfully, the system \
         will automatically email you a confirmation of your submission. The system also will allow you to save your request as a PDF document \
         that you should save for your records. Please do not email individual staff members with data requests.',
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index:21
     },
@@ -279,7 +277,7 @@ questions = [
         //hyperlink inside
         str: 'Please feel free to suggest new terms you would like defined to support your data informed activities by reaching out to any \
         staff in the IR office. You can also submit anonymous suggestions and general feedback using the brief, online Feedback Form.',
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index:22
     },
@@ -290,7 +288,7 @@ questions = [
         financial information, discipline files, information about difficulties in a class or at school if in a record, social security number, \
         and anything with a student ID number.  The following are NOT educational records: personal notes (e.g. faculty member’s private notes), \
         law enforcement or campus security records, health records, or employment and payroll information.',
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index:23
     },
@@ -299,7 +297,7 @@ questions = [
         str: 'A person employed by the school in an administrative, supervisory, academic, research, support staff position, person serving \
         on the Board of Regents, a student serving on an official committee (such as a grievance or disciplinary committee), or a volunteer \
         or outside contractor under certain circumstances.',
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0] ,
         index:24
     },
@@ -307,7 +305,7 @@ questions = [
         //what counts as a legitimate educational interest
         str: 'A legitimate educational interest is defined as the need to review an education record in order to fulfill the school \
         official’s professional responsibilities for the school.',
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index:25
     },
@@ -324,7 +322,7 @@ questions = [
         resources cited in other FAQs regarding what circumstances data at the individual level can be provided.  It should be highlighted \
         that accessing financial aid data (e.g. Pell eligibility) at the individual level is only possible under a restricted set of \
         circumstances.  The IR Office generally only provides data at the aggregated level.',
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index:26
     },
@@ -334,7 +332,7 @@ questions = [
         it is usually necessary for the data requestor to provide student identifiers (e.g. Banner ID numbers) to facilitate the IR office \
         accessing individual level data.  Failure to provide an identifier increases the complexity of the data request, imposes a significant \
         resource burden on the IR office to access and clean the data, and lengthens the turnaround to respond to a data request.',
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index:27
     },
@@ -346,7 +344,7 @@ questions = [
         detail they provide and in the customizability of choosing comparison schools. Comparing institutions using IPEDS provides the most \
         detailed benchmarking data. College Navigator provides the most commonly requested IPEDS data. IPEDS Data Feedback Reports provide \
         overview data with a pre-selected group of comparison schools.",
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index:28
     },
@@ -357,12 +355,12 @@ questions = [
         It provides commonly requested IPEDS data such as graduation rate in an easily accessible site to the public. See the additional \
         FAQs for a list of what kind of data is available and how to use this data source for benchmarking. This website is available at this \
         link and is also listed in the IR website's External Resources.",
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index:29
     },
     {
-        str:['Do you have any other questions?'], 
+        str:['I have more questions.'], 
         index: 30      
     },
     {
@@ -387,7 +385,7 @@ questions = [
         network has the potential to expedite data informed decision-making at the significant risk of creating redundant data silos.  Data governance \
         encompasses both the top-down and grassroots strategies that establish effective university-wide data practices. The work is not simple, however \
         the increase in trust and consistency in the data pays dividends.",
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index:32
     },
@@ -399,7 +397,7 @@ questions = [
         requires that institutions that participate in federal student aid programs report data on enrollments, program completions, graduation rates, faculty \
         and staff, finances, institutional prices, and student financial aid. These data are made available to students and parents through the College Navigator \
         college search Web site and to researchers and others through the IPEDS Data Center. The wealth of data available via IPEDS makes it a valuable resource for internal and external stakeholders interested in better understanding and benchmarking postsecondary education institutions.",
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index: 33
     },
@@ -411,7 +409,7 @@ questions = [
             for the school on tuition, financial aid, enrollment, student demographics, admissions, retention rate, graduation rate, lists of programs/majors offered, \
             service members, varsity athletic teams, accreditations, campus security, and loan default rates. This website is available at this link and is also listed \
             in the IR website's External Resources.",
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index: 34
     },
@@ -421,7 +419,7 @@ questions = [
         str: "Every fall, a new Data Feedback Report (DFR) is created and compares UP’s data with a group of peer comparison institutions.  This important benchmarking \
         document is publicly available.  UP’s DFRs are available in the DFR Archives at this link.  The DFR contains brief data overview of various topics such as enrollment, \
         degrees, financial aid, retention, graduation, finance, faculty/staff, and libraries.",
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index:35
     },//NOTE: IPEDS ON THE DECISION TREE NEEDS TO BE EXPANDED TO LIST OUT THESE QUESTIONS BECAUSE WE WON'T BE ABLE TO FIT THESE ANSWERS ALL ON ONE SCREEN EASILY
@@ -430,7 +428,7 @@ questions = [
         //hyperlink inside
         str: "Data definitions can be found by navigating to the Supporting Documents for the Tableau Dashboards or by reading the Data Definitions page. The Institutional \
         Research Pilots portal space is the intended future space that will host fuller data dictionary documentation. The link will be available via the Data Governance Resources website.",
-        choices:['Do you have any other questions?'], 
+        choices:['I have more questions.'], 
         indices:[0], 
         index:36     
     },
@@ -439,7 +437,7 @@ questions = [
         //hyperlink inside
         str: "The large group of stakeholders involved in data governance are constantly pursuing multiple, long-term and short-term projects to improve the data infrastructure \
         of the university.  Some of the latest priorities and projects are listed on the data governance site. ",
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index:37
     },//NEEDS TO BE ADDED TO DECISION TREE IN DATA GOVERNANCE
@@ -450,7 +448,7 @@ questions = [
         The work is complex and helps offices be prepared to for changes over time.  The IR Office plans to regularly host Data Retreats as a way for any UP employee to \
         have uninterrupted time and a supportive space to build more efficient data tools that directly assist the office and connect/brainstorm with other offices.  See the \
         Data Retreat site for more details! ",
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index:38
     },//NEEDS TO BE ADDED TO DECISION TREE IN DATA GOVERNANCE
@@ -461,7 +459,7 @@ questions = [
         involving human subjects carried out by members of the University community. The principal function of the IRB is to safeguard the rights and welfare of participants \
         in research activities originating in the University. The IRB exercises oversight and review of research initiated by faculty, staff members, and students in connection \
         with their respective academic pursuits. More information is available at the IRB website.",
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index: 39
     },//NEEDS TO BE ADDED TO DECISION TREE IN DATA PROTECTION 
@@ -470,7 +468,7 @@ questions = [
         //hyperlink inside
         str: "As the IR Office transitions from the old website to the upgraded website, some features are being maintained yet continually improved. The At a Glance page \
         compiles tables that used to reside on multiple pages. This includes undergraduate and graduate student enrollment and admissions data.",
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index:40
     },
@@ -478,7 +476,7 @@ questions = [
         //how many student were enrolled during a certain period of time
         //hyperlinks inside
         str:"View the Enrollment Dashboard. The dashboard is powered by Tableau software, which means the data is available all the time, updated regularly and directly from Banner, and is interactive. View the Tableau dashboard site to get oriented and access supporting documentation. IPEDS can be used to find data on other schools. Please see the External Resources FAQ for information on IPEDS and College Navigator.",
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index:41
     },
@@ -486,7 +484,7 @@ questions = [
         //how many majors were enrolled during a certain period of time
         //hyperlinks inside
         str:"View the Enrollment Dashboard. The dashboard is powered by Tableau software, which means the data is available all the time, updated regularly and directly from Banner, and is interactive. The MajorsUnduplicated and MajorsDuplicated tabs correspond to headcounts of primary majors only and headcounts of multiple majors and degrees, respectively.  In other words, use the unduplicated headcount for reports that need to match the total enrollment for the university.  Use the duplicated headcount for departmental reports that need the total headcount of a given major. View the Tableau dashboard site to get oriented and access supporting documentation. IPEDS can be used to find data on other schools. Please see the External Resources FAQ for information on IPEDS and College Navigator.",
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index:42
     },
@@ -494,7 +492,7 @@ questions = [
       //can I see a breakdown of ethnicity
       //hyperlink inside
       str:"Please see the FAQ for What data can I find in the Common Data Set?", 
-      choices:['Do you have any other questions?'], 
+      choices:['I have more questions.'], 
       indices:[0],
       index: 43
     },
@@ -502,7 +500,7 @@ questions = [
         //what was the retention rate for a given cohort
         //hyperlinks inside
         str:"View the Retention Dashboard. The dashboard is powered by Tableau software, which means the data is available all the time, updated regularly and directly from Banner, and is interactive. View the Tableau dashboard site to get oriented and access supporting documentation. IPEDS can be used to find data on other schools. Please see the External Resources FAQ for information on IPEDS and College Navigator.",
-        choices:['Do you have any other questions?'], 
+        choices:['I have more questions.'], 
         indices:[0],
         index: 44
     },
@@ -510,7 +508,7 @@ questions = [
         //what was the grad rate for a given cohort
         //hyperlinks inside
         str:"View the Graduation Dashboard. The dashboard is powered by Tableau software, which means the data is available all the time, updated regularly and directly from Banner, and is interactive. View the Tableau dashboard site to get oriented and access supporting documentation. IPEDS can be used to find data on other schools. Please see the External Resources FAQ for information on IPEDS and College Navigator.",
-        choices:['Do you have any other questions?'], 
+        choices:['I have more questions.'], 
         indices:[0],
         index:45
     },
@@ -518,7 +516,7 @@ questions = [
         //how do I get data
         //hyperlink inside
         str:"There are multiple ways to access data! The most immediate access for a wide variety of data is through the Office of Institutional Research's website. One of the best ways to navigate the site is to scan through the FAQs to find your question, which will direct you to a location with a relevant answer.  Most questions are covered by the link to Institutional Data.  Second, there are repositories of data that reside externally (e.g. IPEDS, US News & World Report rankings, etc). Please see the link for External Resources to access that information. Third, if the data you are seeking is at the individual student level, please see the FAQs regarding Protecting Data. Lastly, if your data request is not covered, Submit a Data Request.",
-        choices:['Do you have any other questions?'],
+        choices:['I have more questions.'],
         indices:[0],
         index:46
         
@@ -533,7 +531,7 @@ questions = [
 
     {
         str: 'Sorry, we do not have the answer for this at the moment.',
-        choices: ['Do you have any other questions?'],
+        choices: ['I have more questions.'],
         indices:[0],
         index: 48
     }
@@ -543,44 +541,83 @@ questions = [
  // dictionary of keywords to use for context-based model
 var keyWords = ["when", "what", "how", "about", "counts", "cds", "data", "faculty", "staff", "student", "general", "public", "contact", "request", "suggest", 
 "access", "report", "ir",  "ferpa", "ipeds", "tableau", "dashboard", "grant", "proposals", "email", "navigator", "benchmarking", "governance", 
-"priorities", "definitions", "time", "individual", "standard", "educational", "records", "school", "official", "interests", "legitimate", "soon"];
+"priorities", "definitions", "time", "individual", "standard", "educational", "records", "school", "official", "interests", "legitimate", "soon", "institutional", 
+"external", "resources", "protection", "inaccurate", "giving", "recieving", "can"];
 
 // this map is set in the order of the answers provided in meeting notes
 const map = new Map();
-map.set('0100011000000000000000000000000000000000', 14);
-map.set('0100010000000000000000000000000000000000', 14);
-map.set('0001001001000000000000000000000000000000', 40);
-map.set('0000001000000010000000000000000000000000', 15);
-map.set('0001000000000000000001000000000000000000', 13);
-map.set('0000000000000001000001000000000000000000', 13);
-map.set('0000000000000001000011000000000000000000', 13);
-map.set('0000000000000001100000110000000000000000', 12);
-map.set('0000001001000100000000000000000000000000', 16);
-map.set('0001001001000100000000000000000000000000', 16);
-map.set('0000001110000100000000000000000000000000', 17);
-map.set('0001001000110100000000000000000000000000', 18);
-map.set('0010000000000000000000000000000000000001', 19);
-map.set('0011001000000100000000000000000000000001', 19);
-map.set('0000001000000100000000001000000000000000', 21);
-map.set('0010000000001100010000000000000000000000', 20);
-map.set('0001000000000000000100000000000000000000', 33);
-map.set('0001000000000000000000000100000000000000', 34);
-map.set('0001001000000000000000000010000000000000', 28);
-map.set('0001000000001000010000000000000000000000', 10);
-map.set('0100000000000000010000000000000000000000', 9);
-map.set('0001000000000000010000000000000000000000', 9);
-map.set('0010000000001000010000000000000000000000', 9);
-map.set('0000000000001000010000000000000000000000', 9);
-map.set('0100001000000000000000000001000000000000', 32);
-map.set('0100001000000000000000000000010000000000', 36);
-map.set('0001001000000000000000000001100000000000', 37);
-map.set('0010001000000000010000000000001000000000', 38);
-map.set('0110000000000000001000000000000000000000', 26);
-map.set('0100000000000000001000000000000000000000', 26);
-map.set('0001001000000000001000000000000110000000', 27);
-map.set('0100100000000000000000000000000001000000', 23);
-map.set('0100100000000000000000000000000000011000', 24);
-map.set('0100100000000000000000000000000001000010', 25);
+map.set('010001100000000000000000000000000000000000000000', 14); // what is cds and what data is in it
+map.set('010001000000000000000000000000000000000000000000', 14); // what is cds
+map.set('000100100100000000000000000000000000000000000000', 40); // i have questions about student data
+map.set('000000100100000000000000000000000000000000000000', 40); // student data
+map.set('000000100000001000000000000000000000000000000000', 15);
+map.set('000100000000000000000100000000000000000000000000', 13);
+map.set('000000000000000100000100000000000000000000000000', 13);
+map.set('000000000000000100001100000000000000000000000000', 13); // i want to access tableau dashboards
+map.set('000000000000000000001100000000000000000000000000', 13); // tableau dashboards 
+map.set('000000000000000110000011000000000000000000000000', 12); // i want to access grants and reports
+map.set('000000000000000100000010000000000000000000000000', 12); // access grant
+map.set('000000000000000100000011000000000000000000000000', 12); // access grant proposals
+map.set('000000000000000110000010000000000000000000000000', 12); // access grant reports
+map.set('000000100100010000000000000000000000000000000000', 16);
+map.set('000100100100010000000000000000000000000000000000', 16);
+map.set('000000111000010000000000000000000000000000000000', 17);
+map.set('000100100011010000000000000000000000000000000000', 18);
+map.set('001000000000000000000000000000000000000100000000', 19);
+map.set('001100100000010000000000000000000000000100000000', 19);
+map.set('000000100000010000000000100000000000000000000000', 21);
+map.set('001000000000110001000000000000000000000000000000', 20);
+map.set('000100000000000000010000000000000000000000000000', 33); // i have questions about IPEDS
+map.set('000100000000000000000000010000000000000000000000', 34); // i have questions about college navigators   
+map.set('000100100000000000000000001000000000000000000000', 28); // i have questions about benchmarking data
+map.set('000100000000100001000000000000000000000000000000', 10);
+map.set('010000000000000001000000000000000000000000000000', 9);
+map.set('000100000000000001000000000000000000000000000000', 9); // i would like to know about ir
+map.set('001000000000100001000000000000000000000000000000', 10); // how do i contact ir
+map.set('000000000000100001000000000000000000000000000000', 10); // contact ir
+map.set('010000100000000000000000000100000000000000000000', 32); // what is data governance
+map.set('010000100000000000000000000001000000000000000000', 36); // what are data definitions
+map.set('000100100000000000000000000110000000000000000000', 37); // i would like to know about data governance priorities
+map.set('000000100000000000000000000110000000000000000000', 37); // data governance priorities
+map.set('001000100000000001000000000000100000000000000000', 38); // how does ir make time for data related tasks
+map.set('000000100000000001000000000000100000000000000000', 38); // ir data related tasks
+map.set('011000000000000000100000000000000000000000000000', 26); // what is ferpa and how does it apply
+map.set('010000000000000000100000000000000000000000000000', 26); // what is ferpa
+map.set('000100100000000000100000000000011000000000000000', 27); // i would like to know more about ferpa standards and individual data
+map.set('000000100000000000100000000000011000000000000000', 27); // ferpa standards and individual data
+map.set('000000000000000000100000000000001000000000000000', 27); // ferpa standards
+map.set('010010000000000000000000000000000100000000000000', 23); // what counts as an educational record
+map.set('010000000000000000000000000000000100000000000000', 23); // what is educational record
+map.set('010010000000000000000000000000000001100000000000', 24); // what counts as school official
+map.set('010000000000000000000000000000000001100000000000', 24); // what is school official
+map.set('000000000000000000000000000000000001100000000000', 24); // school official
+map.set('010010000000000000000000000000000100001000000000', 25); // what counts as a legitimate educational interest
+map.set('000000000000000000000000000000000100001000000000', 25); // legitimate educational interest
+map.set('010000000000000000000000000000000100001000000000', 25); // what is legitimate educational interest
+map.set('000100100000000000000000000000000000000010000000', 5); // i would like to know about institutional data
+map.set('010000100000000000000000000000000000000010000000', 5);// what is institutional data
+map.set('000000100000000000000000000000000000000010000000', 5); // institutional data
+map.set('000100100000000100000000000000000000000000000000', 3); // I would like to know about Data Access
+map.set('010000100000000100000000000000000000000000000000', 3); // what is data access
+map.set('000000100000000100000000000000000000000000000000', 3); // data access
+map.set('000100000000000000000000000000000000000001100000', 4); // I would like to know about External Resources
+map.set('000000000000000000000000000000000000000001100000', 4); // External Resources
+map.set('000100100000000000000000000100000000000000000000', 6); // i would like to know about data governance
+map.set('000000100000000000000000000100000000000000000000', 6); // data governance
+map.set('000100100000000000000000000000000000000000010000', 8); // I would like to know about Data Protection
+map.set('000000100000010000000000000000000000000000000000', 1); // data requests
+map.set('000000100000000001000000000000000000000000001000', 2); // I received data but it is inaccurate or differs from data on the IR website
+map.set('000100100000010000000000000000000000000000000110', 3); // I want to know more about giving and recieving data requests
+map.set('000100100000010000000000000000000000000000000000', 47); // i have questions about data requests
+map.set('000000100000010000000000000000000000000000000001', 47); // can i request data
+map.set('001000000000000000000000000000000000000100000001', 19); // how soon can i hear back
+map.set('001000000000000001000000000000000000000100000001', 19); // how soon can i hear back from ir
+map.set('000000000000000000000000010000000000000000000000', 29); // navigator
+map.set('010000000000000000000000010000000000000000000000', 29); // what are college navigators
+map.set('000000100000001000000000000000000000000000000001', 15); // can i suggest data || suggest data
+map.set('000000100000000000000000000001000000000000000000', 36); // data definitions
+map.set('000000000000000000100000000000000000000000000000', 31); // ferpa
+map.set('001000100000000000000000000000000000000000000000', 46); // how do i get data
 
 function makeCookie() {
     document.cookie = "cookieIndex=0";
@@ -594,6 +631,65 @@ function getInfoCookie() {
 function checkifCookie(newIndex) {
     if(document.cookie == ""){
         document.cookie = "cookieIndex=0";
+        return false;
+    }
+    else{
+        document.cookie = "cookieIndex="+newIndex;
+        return true;
+    }
+}
+
+function choice1Handler(answerIndex,previousQuestionIndex) {
+
+    if(checkifCookie(0) == false){
+        newIndex = 0;
+    }
+    else {
+        newIndex = getInfoCookie();
+    }
+    
+    question = questions[previousQuestionIndex];
+    newIndex = question["indices"][answerIndex];
+    
+    if (newIndex <= 0){
+        return questions[0];
+    }
+    else{
+        checkifCookie(newIndex);
+        return questions[newIndex];
+    }
+}
+
+
+function contextHandler(str) {
+    var string = str.toLowerCase();
+    const question = string.split(" ");
+    var bitwise = '';
+    var bit = 0;
+    for(let i = 0; i < keyWords.length; i++) {
+        for(let j = 0; j < question.length; j++) {
+            if(question[j].startsWith(keyWords[i])) {
+                bit = 1;
+            }
+        }
+
+        bitwise = bitwise.concat(bit);
+        bit = 0;
+    }
+    console.log(bitwise);
+
+    if(map.has(bitwise)) {
+        let n = map.get(bitwise);
+        newAnswer = questions[n];
+        let newIndex = newAnswer["index"];
+        checkifCookie(newIndex);
+        return questions[newIndex];
+    }
+    else {
+        checkifCookie(48);
+        return questions[48];
+    }
+} "cookieIndex=0";
         return false;
     }
     else{
