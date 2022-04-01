@@ -135,7 +135,7 @@ questions = [
     },
     {
         //Contact IR
-        str: 'Initial, brief phone calls are appreciated as this contact often helps clarify your request. 503.943.8000',
+        str: 'Initial, brief phone calls are appreciated as this contact often helps clarify your request. 503.943.8000. IR can be reached by our email: ir@up.edu.',
         choices:['I have more questions.'],
         indices:[0],
         index:10
@@ -631,65 +631,6 @@ function getInfoCookie() {
 function checkifCookie(newIndex) {
     if(document.cookie == ""){
         document.cookie = "cookieIndex=0";
-        return false;
-    }
-    else{
-        document.cookie = "cookieIndex="+newIndex;
-        return true;
-    }
-}
-
-function choice1Handler(answerIndex,previousQuestionIndex) {
-
-    if(checkifCookie(0) == false){
-        newIndex = 0;
-    }
-    else {
-        newIndex = getInfoCookie();
-    }
-    
-    question = questions[previousQuestionIndex];
-    newIndex = question["indices"][answerIndex];
-    
-    if (newIndex <= 0){
-        return questions[0];
-    }
-    else{
-        checkifCookie(newIndex);
-        return questions[newIndex];
-    }
-}
-
-
-function contextHandler(str) {
-    var string = str.toLowerCase();
-    const question = string.split(" ");
-    var bitwise = '';
-    var bit = 0;
-    for(let i = 0; i < keyWords.length; i++) {
-        for(let j = 0; j < question.length; j++) {
-            if(question[j].startsWith(keyWords[i])) {
-                bit = 1;
-            }
-        }
-
-        bitwise = bitwise.concat(bit);
-        bit = 0;
-    }
-    console.log(bitwise);
-
-    if(map.has(bitwise)) {
-        let n = map.get(bitwise);
-        newAnswer = questions[n];
-        let newIndex = newAnswer["index"];
-        checkifCookie(newIndex);
-        return questions[newIndex];
-    }
-    else {
-        checkifCookie(48);
-        return questions[48];
-    }
-} "cookieIndex=0";
         return false;
     }
     else{
